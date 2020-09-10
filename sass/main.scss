@@ -1,11 +1,15 @@
 /* base */
-
 @import "base/base";
 @import "base/typography";
 
 /* layout */ 
-@import "layout/header";
 @import "layout/search_bar";
-@import "layout/explore";
+@import "layout/local";
+@import "layout/manual";
+
 /* page */
 @import "pages/home";
+
+/* compenent */
+@import "component/button";
+@import "component/restaurants";

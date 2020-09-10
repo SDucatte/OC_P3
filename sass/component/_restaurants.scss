@@ -1,0 +1,17 @@
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    img {
+        width: 315px;
+        height: 230px;
+        border-radius: 10px;
+    }
+}
+
+.restaurant--description {
+    display: flex;
+    justify-content: space-between;
+   
+}
