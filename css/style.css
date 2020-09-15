@@ -1,12 +1,19 @@
 /* base */
 body {
-  background: white;
+  background-color: #f6f6f6;
+  font-family: "roboto";
 }
 
 .search_bar {
   background: #eaeaea;
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url("Roboto-Regular.ttf");
+  src: url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular-webfont.svg") format("svg"), url("Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+}
 /* layout */
 .search_bar {
   text-align: center;
@@ -35,6 +42,11 @@ header img {
   margin-top: 0%;
   padding-top: 15px;
   font-weight: bold;
+}
+
+.manual {
+  background-color: white;
+  font-family: "roboto";
 }
 
 .manual--list {
@@ -72,16 +84,38 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .restaurant img {
-  width: 315px;
-  height: 230px;
-  border-radius: 10px;
+  max-width: 20rem;
+  width: auto;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .restaurant--description {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  max-width: 20rem;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+article {
+  max-width: max-content;
+  font-family: "roboto";
+}
+
+.far {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  left: 250px;
+  bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
