@@ -1,9 +1,11 @@
-.restaurant {
+.item__3 {
+    background: #f6f6f6;
+}
+.item__3__restaurant {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin: 1.2rem;
     
     img {
         max-width: 20rem;
@@ -14,7 +16,7 @@
     }
 }
 
-.restaurant--description {
+.item__3__restaurant--description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,6 +24,12 @@
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    line-height: 0.2em;
+}
+
+.item__3__restaurant--description, p {
+    padding-top: 0.8rem;
+    margin: 0%;
 }
 
 article {

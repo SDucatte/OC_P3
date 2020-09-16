@@ -1,9 +1,14 @@
 body{
-    background-color: #f6f6f6;
+   
     font-family: "roboto";
+    max-width: 80%;
+    margin: auto;
 }
 
-.search_bar {
-    background: #eaeaea;
+.tittle--header {
+    font-family: "shrikhand";
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 2.5rem;
 }
-
