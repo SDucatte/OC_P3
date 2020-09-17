@@ -1,7 +1,8 @@
-.item__3 {
+.section {
     background: #f6f6f6;
+    width: 25rem;
 }
-.item__3__restaurant {
+.section__restaurant {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -16,7 +17,7 @@
     }
 }
 
-.item__3__restaurant--description {
+.section__restaurant--description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +28,7 @@
     line-height: 0.2em;
 }
 
-.item__3__restaurant--description, p {
+.section__restaurant--description, p {
     padding-top: 0.8rem;
     margin: 0%;
 }

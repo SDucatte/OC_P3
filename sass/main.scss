@@ -1,16 +1,16 @@
 /* base */
 @import "base/base";
 @import "base/font";
+@import "base/typography";
 
 /* layout */ 
-@import "layout/search_bar";
-@import "layout/local";
-@import "layout/manual";
-@import "layout/restaurants";
+@import "layout/section__intro";
+@import "layout/section__manual";
+@import "layout/section__restaurants";
+@import "layout/footer";
 
 /* page */
 @import "pages/home";
 
 /* compenent */
 @import "component/button";
-@import "component/footer";

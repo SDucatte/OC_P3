@@ -1,11 +1,12 @@
-footer {
+.footer {
     background: #353535;
     color: white;
     margin: 0%;
-    width: 100%;
+    max-width: 26.5rem;
+    width: 20rem;
 }
 
-ul {
+.footer--list {
     line-height: 1.5rem;
     padding-bottom: 2rem;
 }
@@ -14,5 +15,5 @@ ul {
     font-family: "shrikhand";
     font-size: 1.1rem;
     padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding-bottom: 0.6rem;
 }

@@ -1,8 +1,11 @@
 body{
    
     font-family: "roboto";
-    max-width: 80%;
-    margin: auto;
+    max-width: 25rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
 }
 
 .tittle--header {
@@ -11,4 +14,12 @@ body{
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     font-size: 2.5rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+.section {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    
 }
