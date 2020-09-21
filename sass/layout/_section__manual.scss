@@ -1,29 +1,23 @@
-.section {
-    background-color: white;
-    font-family: "roboto";
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 .section__manual {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
     padding: 0;
-    position: relative;
+    margin-left: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
 }
 
 .section__manual--step {
     background: #f6f6f6;
     border-radius: 2rem;
-    font-weight: bold;
     padding: 1.2em;
     padding-left: 2.8rem;
-    margin-left: 4rem;
     display: inline-block;
     text-align: left;
-    width: 15rem;
+   width: 15rem;
 }
 
 .section__manual--number {
@@ -32,12 +26,9 @@
     color: #ffffff;
     text-align: center;
     padding: 0.2rem;
-    height: 1.2rem;
     width: 1.1rem;
     position: absolute;
     top: 1rem;
-    left: 3.8rem;
-
 }
 
 ul {

@@ -1,15 +1,15 @@
 .section {
     background: #f6f6f6;
-    width: 25rem;
+ 
 }
 .section__restaurant {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 1.2rem;
+ 
     
     img {
-        max-width: 20rem;
+        max-width: 15rem;
         width: auto;
         height: auto;
         border-top-left-radius: 10px;
@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 20rem;
+    max-width: 15rem;
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -36,13 +36,16 @@
 article {
     max-width: max-content;
     font-family: "roboto";
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .far {
     margin-top: 16px;
     margin-bottom: 16px;
     position: relative;
-    left: 250px;
-    bottom: 25px;
+    left: 10rem;
+    bottom: 1.5rem;
 }
 

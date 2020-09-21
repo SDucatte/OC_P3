@@ -1,19 +1,9 @@
 body{
-   
+    width: 18rem;
     font-family: "roboto";
-    max-width: 25rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-}
-
-.tittle--header {
-    font-family: "shrikhand";
-    text-align: center;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    font-size: 2.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    margin: 0%;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
 }
@@ -21,5 +11,16 @@ body{
 .section {
     margin-left: 0.6rem;
     margin-right: 0.6rem;
-    
+    width: 18rem;
+    background: #f6f6f6;
+}
+
+.section--whitebackground {
+    background-color: white;
+    font-family: "roboto";
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    width: 18rem;
 }
