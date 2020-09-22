@@ -5,13 +5,13 @@ body {
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   margin: 0%;
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 18rem;
   background: #f6f6f6;
 }
@@ -21,8 +21,8 @@ body {
   font-family: "roboto";
   display: flex;
   flex-direction: column;
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 18rem;
 }
 
@@ -60,6 +60,15 @@ header {
   text-align: center;
 }
 
+.subtitle--underline {
+  text-decoration: underline #99E2D0;
+}
+
+.title--restaurant {
+  font-family: "shrikhand";
+  font-size: 2rem;
+}
+
 /* layout */
 .section__intro {
   text-align: center;
@@ -90,7 +99,7 @@ header {
   padding-left: 2.8rem;
   display: inline-block;
   text-align: left;
-  width: 15rem;
+  width: 14rem;
 }
 
 .section__manual--number {
@@ -102,6 +111,7 @@ header {
   width: 1.1rem;
   position: absolute;
   top: 1rem;
+  left: 0.3rem;
 }
 
 ul {
@@ -171,8 +181,8 @@ article {
   background: #353535;
   color: white;
   width: 18rem;
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer--list {
@@ -188,8 +198,26 @@ article {
 }
 
 /* page */
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 0.6rem;
+  border-top-right-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
+}
+
+.plate {
+  border-radius: 2rem;
+  background-color: white;
+  padding: 0.6rem;
+  position: relative;
+  right: 2rem;
+}
+
 /* compenent */
-button {
+.button {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;

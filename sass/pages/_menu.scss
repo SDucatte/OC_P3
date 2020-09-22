@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 0.6rem;
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}
+
+.plate {
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0.6rem;
+    position: relative;
+    right: 2rem;
+}
