@@ -11,44 +11,51 @@
 <body>
     
     <header>
-        <h1 class="title--header">ohmyfood</h1>
+        <div class="return">
+            <a href="index.html"><i class="fas fa-arrow-left fa-lg"></i></a><h1 class="title--menu">ohmyfood</h1>
+            
+        </div>
+        
     </header>
     
-    /* insertion image ici */
+    
+     <img class="photo" src="images/bastille.jpg" alt="image_plat_restaurant_bastille">
     
     <section class="menu">
         
-        <h2 class="title--restaurant">Bastille</h2> 
+        <h2 class="title--restaurant">Bastille<i class="far fa-heart"></i></h2> 
         
-        <h3><span class="subtitle--underline">ENTR</span>EES</h3>
+        <h3 class="menu__subtitle"><span class="subtitle--underline">ENTR</span>EES</h3>
         
-        <ul>
-            <li class="plate"><strong>Citrus Squid Carpaccio</strong><br>with orangfe zest</li>
-            <li class="plate"><strong>Grandmother's Vegetable Soup</strong><br>Carrots, parsnips Jerusalem artichoke</li>
-            <li class="plate"><strong>Onion Soup</strong><br>Revisited</li>
+        <ul class="menu__list">
+            <li class="plate"><strong>Citrus Squid Carpaccio</strong><br><i class="plate--description">with orangfe zest</i></li>
+            <li class="plate"><strong>Grandmother's Vegetable Soup</strong><br><i class="plate--description">Carrots, parsnips Jerusalem artichoke</i></li>
+            <li class="plate"><strong>Onion Soup</strong><br><i class="plate--description">Revisited</i></li>
         </ul>
         
-        <h3><span class="subtitle--underline">MAIN</span>DISH</h3>
+        <h3 class="menu__subtitle"><span class="subtitle--underline">MAIN</span>DISH</h3>
         
-        <ul>
-            <li class="plate"><strong>Scallops</strong><br>with mashed parsnip</li>
-            <li class="plate"><strong>Magret de canard</strong><br>with mashed potatoes</li>
-            <li class="plate"><strong>Game Hen</strong><br>with vegetable gnoochis</li>
+        <ul class="menu__list">
+            <li class="plate"><strong>Scallops</strong><br><i class="plate--description">with mashed parsnip</i></li>
+            <li class="plate"><strong>Magret de canard</strong><br><i class="plate--description">with mashed potatoes</i></li>
+            <li class="plate"><strong>Game Hen</strong><br><i class="plate--description">with vegetable gnoochis</i></li>
         </ul>
         
-        <h3><span class="subtitle--underline">DESS</span>ERTS</h3>
+        <h3 class="menu__subtitle"><span class="subtitle--underline">DESS</span>ERTS</h3>
         
-        <ul>
-            <li class="plate"><strong>Floral Ice Cream</strong><br>with hazelnut butter</li>
-            <li class="plate"><strong>Chocolat Lava Cake</strong><br>Revisited</li>
-            <li class="plate"><strong>Napolean</strong><br>with blueberries and marzipan</li>
+        <ul class="menu__list"> 
+            <li class="plate"><strong>Floral Ice Cream</strong><br><i class="plate--description">with hazelnut butter</i></li>
+            <li class="plate"><strong>Chocolat Lava Cake</strong><br><i class="plate--description">Revisited</i></li>
+            <li class="plate"><strong>Napolean</strong><br><i class="plate--description">with blueberries and marzipan</i></li>
         </ul>
         
+        <button class="button order">Order</button>
+
     </section>
     
-    <button class="button">Order</button>
     
-    <footer class="footer">
+    
+    <footer class="footer--menu">
         <ul class="footer--list">
             <li class="tittle--footer">ohmyfood</li>
             <li><i class="fas fa-utensils"></i> Suggest a restaurant</li>

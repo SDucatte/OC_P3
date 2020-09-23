@@ -6,12 +6,39 @@
     padding: 0.6rem;
     border-top-right-radius: 2.5rem;
     border-top-left-radius: 2.5rem;
+    position: relative;
+    top: 10.5rem;
 }
 
 .plate {
     border-radius: 2rem;
     background-color: white;
-    padding: 0.6rem;
+    padding: 1rem;
     position: relative;
     right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
 }
+
+.plate--description {
+    font-size: 0.7rem;
+    font-style: normal;
+}
+
+.button {
+    text-align: center;
+}
+
+.photo {
+    width: 18rem;
+    height: 12rem;
+    position: absolute;
+}
+
+.return {
+    display: flex;
+    align-items: center;
+}
+

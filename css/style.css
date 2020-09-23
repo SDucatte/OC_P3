@@ -36,11 +36,6 @@ body {
   font-family: "shrikhand";
   src: url("Shrikhand-Regular.otf") format("opentype");
 }
-header {
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
-}
-
 .title--header {
   font-family: "shrikhand";
   text-align: center;
@@ -49,6 +44,16 @@ header {
   font-size: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.title--menu {
+  font-family: "shrikhand";
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .section__subtitle {
@@ -60,13 +65,35 @@ header {
   text-align: center;
 }
 
-.subtitle--underline {
-  text-decoration: underline #99E2D0;
-}
-
 .title--restaurant {
   font-family: "shrikhand";
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  margin: 0px;
+}
+
+.title--restaurant i {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0px;
+  top: 0.2rem;
+  left: 8rem;
+}
+
+.subtitle--underline {
+  border-bottom: #99E2D0 3px solid;
+}
+
+.menu__list {
+  padding-left: 1.7rem;
+}
+
+.menu__subtitle {
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 /* layout */
@@ -170,14 +197,24 @@ article {
 }
 
 .far {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: relative;
   left: 10rem;
   bottom: 1.5rem;
 }
 
 .footer {
+  background: #353535;
+  color: white;
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer--menu {
+  top: 10rem;
+  position: relative;
   background: #353535;
   color: white;
   width: 18rem;
@@ -206,14 +243,40 @@ article {
   padding: 0.6rem;
   border-top-right-radius: 2.5rem;
   border-top-left-radius: 2.5rem;
+  position: relative;
+  top: 10.5rem;
 }
 
 .plate {
   border-radius: 2rem;
   background-color: white;
-  padding: 0.6rem;
+  padding: 1rem;
   position: relative;
   right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.plate--description {
+  font-size: 0.7rem;
+  font-style: normal;
+}
+
+.button {
+  text-align: center;
+}
+
+.photo {
+  width: 18rem;
+  height: 12rem;
+  position: absolute;
+}
+
+.return {
+  display: flex;
+  align-items: center;
 }
 
 /* compenent */
@@ -224,6 +287,16 @@ article {
   border-radius: 1.5rem;
   padding: 0.6rem;
   margin-top: 1.25rem;
+  position: relative;
+}
+
+.order {
+  width: 50%;
+  display: inline-block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

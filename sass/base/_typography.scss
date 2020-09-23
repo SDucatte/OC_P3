@@ -1,7 +1,3 @@
-header {
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-}
 
 .title--header {
     font-family: "shrikhand";
@@ -13,6 +9,17 @@ header {
     margin-right: auto;
 }
 
+
+.title--menu {
+    font-family: "shrikhand";
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+   position: relative;
+}
+
 .section__subtitle {
     padding-left: 1.5rem;
     padding-top: 1.5rem;
@@ -22,12 +29,33 @@ header {
     text-align: center;
 }
 
-.subtitle--underline {
-    text-decoration: underline #99E2D0;
-}
-
-
 .title--restaurant {
     font-family: "shrikhand";
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    margin: 0px;
 }
+
+.title--restaurant i {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0px;
+    top: 0.2rem;
+    left: 8rem;
+}
+
+.subtitle--underline {
+    border-bottom: #99E2D0 3px solid;
+}
+
+.menu__list {
+    padding-left: 1.7rem;
+}
+
+.menu__subtitle {
+    font-size: 1rem;
+    margin-bottom: 0;
+} 
