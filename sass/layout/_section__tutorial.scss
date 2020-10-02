@@ -1,26 +1,24 @@
-
-
-.section__manual {
+.tutorial {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin-left: 0;
     margin-block-start: 1em;
     margin-block-end: 1em;
-
+    font-size: 0.8rem;
 }
 
-.section__manual--step {
+.tutorial__step {
     background: #f6f6f6;
     border-radius: 2rem;
     padding: 1.2em;
     padding-left: 2.8rem;
     display: inline-block;
     text-align: left;
-   width: 14rem;
+    width: 12rem;
 }
 
-.section__manual--number {
+.tutorial__number {
     border-radius: 50%;
     background: #9356DC;
     color: #ffffff;
@@ -29,7 +27,7 @@
     width: 1.1rem;
     position: absolute;
     top: 1rem;
-    left: 0.3rem;
+    left: -0.5rem;
 }
 
 ul {
@@ -42,6 +40,3 @@ li {
     position: relative;
 }
 
-.fas {
-    margin-right: 0.6rem;
-}

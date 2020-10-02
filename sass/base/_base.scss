@@ -1,26 +1,12 @@
-body{
-    width: 18rem;
-    font-family: "roboto";
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    margin: 0%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .section {
-    margin-left: auto;
-    margin-right: auto;
-    width: 18rem;
-    background: #f6f6f6;
-}
-
-.section--whitebackground {
-    background-color: white;
-    font-family: "roboto";
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     width: 18rem;
+    background-color: #f6f6f6;
+        &--whitebackground {
+            background-color: white;
+        }
 }
+

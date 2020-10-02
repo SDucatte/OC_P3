@@ -11,7 +11,7 @@
 <body>
     
     <header>
-        <h1 class="title--header">ohmyfood</h1>
+        <h1 class="title title--header">ohmyfood</h1>
     </header>
     
     
@@ -20,57 +20,68 @@
             <p class="section__intro--search_bar"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
             <h2 class="section__subtitle--intro">Book the menu you like</h2>
             <p>Discover top-of-the-art restaurant we picked for you</p>
-            <button class="button">Explore our restaurants</button>
+            <button class="btn">Explore our restaurants</button>
         </article>    
     </section>
     
     
-    <section class="section--whitebackground">
+    <section class="tutorial section section--whitebackground">
         
         <h2 class="section__subtitle">How it works</h2>
         
-        <ul class="section__manual">
+        <ul>
             <li>
-                <span class="section__manual--number">1</span>
-                <span class="section__manual--step"><i class="fas fa-mobile-alt"></i> Chose a restaurant</span>
-                
+                <span class="tutorial__number">1</span>
+                <span class="tutorial__step"><i class="fas fa-mobile-alt"></i> Chose a restaurant</span>
             </li>
             
             <li>
-                <span class="section__manual--number">2</span>
-                <span class="section__manual--step"><i class="fas fa-list-ul"></i> Create your menu</span>
+                <span class="tutorial__number">2</span>
+                <span class="tutorial__step"><i class="fas fa-list-ul"></i> Create your menu</span>
             </li>
             
             <li>
-                <span class="section__manual--number">3</span>
-                <span class="section__manual--step"><i class="fas fa-store"></i> Go enjoy it at the restaurant</span>
+                <span class="tutorial__number">3</span>
+                <span class="tutorial__step"><i class="fas fa-store"></i> Go enjoy it at the restaurant</span>
             </li>
             
         </ul>
         
     </section>
     
-    
+    <section class="section--loader">
+        <span class="loader loader--quart"></span>
+        Chargement ...
+    </section>
+
     <section class="section">
         
         <h2 class="section__subtitle">Restaurants</h2>
         
         <article class="section__restaurant">
+            <a href="restaurant_palette.html">
             <img src="images/palette_petit_format.jpg" alt="plat restaurant the full palette">
             <div class="section__restaurant--description"> 
-                <p><strong>The Full Palette</strong><br>Paris <i class="far fa-heart fa-lg"></i></p>
+                <p><strong>The Full Palette</strong><br>Paris <i class="far fa-heart fa-lg"></i><i class="fas fa-heart"></i></p>
             </div>
+            </a>
         </article>
         
         <article class="section__restaurant">
+            <a href="restaurant_enchanted.html">
             <img src="images/plate_petit_format.jpg" alt="plat restaurant the enchanted plate">
             <div class="section__restaurant--description">
-                <p><strong>The Enchanted Plate</strong><br>Paris <i class="far fa-heart fa-lg"></i></p>
+                <p><strong>The Enchanted Plate</strong><br>Paris </p>
+            </div>
+            </a>
+            <div class="section__restaurant--icone">
+                <i class="fav--off far fa-heart fa-lg"></i>
+                <i class="fav--on fas fa-heart fa-lg"></i>
             </div>
         </article>
         
         <article class="section__restaurant">
-            <a href="restaurant_1.html">
+            <a href="restaurant_bastille.html">
             <img src="images/bastille_petit_format.jpg" alt="plat restaurant bastille">
             <div class="section__restaurant--description">
                 <p><strong>Bastille</strong><br>Paris <i class="far fa-heart fa-lg"></i></p>
@@ -79,24 +90,26 @@
         </article>
         
         <article class="section__restaurant">
+            <a href="restaurant_gourmand.html">
             <img src="images/gourmand_petit_format.jpg" alt="plat restaurant le gourmand">
             <div class="section__restaurant--description">
                 <p><strong>Gourmand</strong><br>Paris <i class="far fa-heart fa-lg"></i></p>
             </div>
+            </a>
         </article>
         
     </section>
     
     <footer class="footer">
         <ul class="footer--list">
-            <li class="tittle--footer">ohmyfood</li>
-            <li><i class="fas fa-utensils"></i> Suggest a restaurant</li>
-            <li><i class="fas fa-hands-helping"></i> Become a partner</li>
+            <li class="title title--footer">ohmyfood</li>
+            <li class="footer-align"><span class="fa-li"><i class="fas fa-utensils fa-sm"></i></span>Suggest a restaurant</li>
+            <li class="footer-align"><span class="fa-li"><i class="fas fa-hands-helping fa-xs"></i></span>Become a partner</li>
             <li>Legal</li>
-            <li>Contact</li>
+            <li><a href="mailto:sebastien.ducatte@gmail.com"> Contact</a></li>
         </ul>
     </footer>
-    
+
 </body>
 
 </html>

@@ -1,24 +1,4 @@
 
-.title--header {
-    font-family: "shrikhand";
-    text-align: center;
-    padding-top: 0.4rem;
-    margin-bottom: 0.3rem;
-    font-size: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.title--menu {
-    font-family: "shrikhand";
-    text-align: center;
-    margin-bottom: 0.8rem;
-    font-size: 1.8rem;
-    margin-left: auto;
-    margin-right: auto;
-   position: relative;
-}
 
 .section__subtitle {
     padding-left: 1.5rem;
@@ -29,25 +9,10 @@
     text-align: center;
 }
 
-.title--restaurant {
-    font-family: "shrikhand";
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    position: relative;
-    margin: 0px;
-}
 
-.title--restaurant i {
-    position: relative;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin: 0px;
-    top: 0.2rem;
-    left: 8rem;
-}
 
-.subtitle--underline {
+
+.menu__subtitle--underline {
     border-bottom: #99E2D0 3px solid;
 }
 
@@ -59,3 +24,8 @@
     font-size: 1rem;
     margin-bottom: 0;
 } 
+
+a {
+    color: black;
+    text-decoration: none;
+}

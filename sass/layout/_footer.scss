@@ -4,25 +4,25 @@
     width: 18rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-.footer--menu {
-    top: 10rem;
     position: relative;
-    background: #353535;
-    color: white;
-    width: 18rem;
-    margin-left: auto;
-    margin-right: auto;
-}
+        &--menu {
+            top: 10rem;
+        }
+    }
+
+
 .footer--list {
     line-height: 1.5rem;
     padding-bottom: 2rem;
+    margin-top: 0rem;
 }
 
-.tittle--footer {
-    font-family: "shrikhand";
-    font-size: 1.1rem;
-    padding-top: 1.3rem;
-    padding-bottom: 0.6rem;
+.title--footer {
+    padding-top: 1rem;
+    margin-top: 0rem;
+}
+
+.footer-align {
+    position: relative;
+    left: 1.9rem;
 }

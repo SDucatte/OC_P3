@@ -5,13 +5,15 @@
 
 /* layout */ 
 @import "layout/section__intro";
-@import "layout/section__manual";
+@import "layout/section__tutorial";
 @import "layout/section__restaurants";
 @import "layout/footer";
 
 /* page */
 @import "pages/home";
 @import "pages/menu";
+@import "pages/commun";
 
 /* compenent */
 @import "component/button";
+@import "component/loader";
