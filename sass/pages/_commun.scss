@@ -1,17 +1,13 @@
 body {
-
-    &:active {
-        opacity: 0.5;
-        color: white;
-    }
     width: 18rem;
     font-family: "roboto";
     padding-left: 0.2rem;
     padding-right: 0.2rem;
-    margin: 0%;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
 }
+
 .title {
     font-family: "shrikhand";
     &--header {

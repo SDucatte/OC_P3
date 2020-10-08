@@ -1,13 +1,18 @@
 .section__restaurant {
     position: relative;
     margin-bottom: 1.5rem;
-    
+    max-width: max-content;
+    font-family: "roboto";
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
     img {
         max-width: 15rem;
         width: auto;
         height: auto;
         border-top-left-radius: 0.75rem;
         border-top-right-radius: 0.75rem;
+        margin: 0%;
     }
 }
 
@@ -17,49 +22,39 @@
     border-bottom-right-radius: 0.75rem;
     position: relative;
     line-height: 1.5rem;
-    padding: 0.8rem;
-    padding-left: 0.2rem;
-    margin: 0%;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    top: -1.5rem;
 }
 
 .section__restaurant--icone {
     position: relative;
     left: 2.5rem;
-    top: -3.5rem;
+    top: -1.5rem;
     height: fit-content;
     width: fit-content;
 }
 
-
-article {
-    max-width: max-content;
-    font-family: "roboto";
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.fav--on {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.fav {
     left: 11rem;
-    bottom: -0.5rem;
+    top: -2.5rem;
     position: absolute;
-    
- 
-
-    opacity: 0;
-
+    &--on {
+        opacity: 0;
+    } 
+    &--off {
+        opacity: 1;
     }
-
-.fav--off {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    left: 11rem;
-    bottom: -0.5rem;
-    position: absolute;
-   
-    opacity: 1;
-
 }
 
+.section__restaurant--icone {
+    &:hover {
+        .fav--off {
+            opacity: 0;
+        }
+        .fav--on {
+            opacity: 0.8;
+            color: #9356DC;
+        }
+    }
+}
