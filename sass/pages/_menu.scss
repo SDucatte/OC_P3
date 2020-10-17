@@ -1,7 +1,6 @@
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: #eaeaea;
     padding: 0.6rem;
     border-top-right-radius: 2.5rem;
@@ -12,35 +11,95 @@
 
 .icone--palette {
     position: relative;
+}
+
+@keyframes check{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+
+.plate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    height: 3rem;
+    overflow: hidden;
+    transition: display 2s ease-in-out;
+    animation: plate 1000ms linear 1s;
+    opacity: 0;
+    
+    &:hover {
+        .plate__animation {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            height: 3rem;
+            width: 20%;
+            background-color: #99E2D0;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            animation: check 400ms linear forwards;
+            transform-origin: 50% 0%;
+            opacity: 1;
+        }
+        
+        .fa-check-circle {  
+            transform: rotate(360deg);
+            transition: transform linear 400ms;
+        }
+        .plate__price {
+            transform: translate(-120%);
+            transition: transform 400ms;
+        }
+   
+    }   
     
 }
 
-.plate {
-    border-radius: 1rem;
-    background-color: white;
-    padding: 0.7rem;
-    position: relative;
-    right: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    width: 100%;
-        &:hover {
-            background-color: #99E2D0;
-            transform: translateX(-25%);
-        }
+.plate__animation {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 0%;
 }
 
-.plate__description {
-    font-size: 0.7rem;
-    font-style: normal;
+.fa-check-circle {
+    color: white;
+}
 
+.plate__name {
+    max-width: 12.5rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    &--description {
+        font-size: 0.8rem;
+        font-style: normal;
+        overflow: hidden;
+    }
 }
 
 .plate__price {
-    float: right;
+    display: inline-block;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 14rem;
 }
 
 .photo {
@@ -48,7 +107,6 @@
     height: 12rem;
     position: absolute;
 }
-
 
 .title {
     font-family: "shrikhand";
@@ -65,7 +123,32 @@
         padding-bottom: 1rem;
         margin: 0px;
         top: 0.2rem;
-        
+        display: flex;
+        justify-content: space-between;
     }
 }
+
+.menu__list {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+@keyframes plate {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.entree {
+    animation: plate 250ms linear forwards 1s;
+}
+
+.main-dish{
+    animation: plate 250ms linear forwards 2s;
+}
+
+.dessert{
+    animation: plate 250ms linear forwards 3s;
+}
+
 

@@ -12,7 +12,7 @@
     
     <header>
         <div class="return">
-            <a href="index.html"><i class="fas fa-arrow-left fa-lg"></i></a><h1 class="title title--menu">ohmyfood</h1>  
+            <a href="index.html"><span class="link"><i class="fas fa-arrow-left fa-lg"></i></span></a><h1 class="title title--menu">ohmyfood</h1>  
         </div> 
     </header>
     
@@ -21,81 +21,136 @@
     
     <main class="menu">
         
-        <h2 class="title title--restaurant">The Enchanted Plate<i class="far fa-heart"></i></h2> 
+        <h2 class="title title--restaurant">
+            The Enchanted Plate
+            <span class="fav--menu">
+                <i class="far fa-heart"></i>
+            </span>
+        </h2> 
         
         <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">ENTR</span>EES</h3>
-        
-        <ul class="menu__list">
-            <li class="plate">
-                <strong>Foie Gras Ravioli</strong><br>
-                <i class="plate__description">With truffle cream</i>
-                <span class="plate__price">25€</span>
-            </li>
-            <li class="plate">
-                <strong>Oscietra Caviar</strong><br>
-                <i class="plate__description">With buckwheat blinis</i>
-                <span class="plate__price">35€</span>
-            </li>
-            <li class="plate">
-                <strong>Lobster and Leek Foam</strong><br>
-                <i class="plate__description">Marinated with orange zest</i>
-                <span class="plate__price">20€</span>
-            </li>
-            <li class="plate">
-                <strong>Duck Foie Gras</strong><br>
-                <i class="plate__description">With fig jam and grilled baguette</i>
-                <span class="plate__price">35€</span>
-            </li>
-        </ul>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">ENTR</span>EES</h3>
+            
+            <ul class="menu__list">
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Foie Gras Ravioli</strong><br>
+                        <i class="plate__name--description">With truffle cream</i>  
+                    </div>
+                    <span class="plate__price">25€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Oscietra Caviar</strong><br>
+                        <i class="plate__name--description">With buckwheat blinis</i>
+                    </div>
+                    <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Lobster and Leek Foam</strong><br>
+                        <i class="plate__name--description">Marinated with orange zest</i>
+                    </div>
+                    <span class="plate__price">20€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Duck Foie Gras</strong><br>
+                        <i class="plate__name--description">With fig jam and grilled baguette</i>
+                    </div>
+                    <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
         </section>
-
+        
         <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">MAIN</span>DISH</h3>
-        
-        <ul class="menu__list">
-            <li class="plate">
-                <strong>Fresh Buttered Scallops</strong><br>
-                <i class="plate__description">With white celery puree</i>
-                <span class="plate__price">40€</span>
-            </li>
-            <li class="plate">
-                <strong>Pan-Fried Lobster</strong><br>
-                <i class="plate__description">With mashed sweet potatoes</i>
-                <span class="plate__price">35€</span>
-            </li>
-            <li class="plate">
-                <strong>Braised Ox Tail</strong><br>
-                <i class="plate__description">With wold rice and lemon zest</i>
-                <span class="plate__price">44€</span>
-            </li>
-        </ul>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">MAIN</span>DISH</h3>
+            
+            <ul class="menu__list">
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Fresh Buttered Scallops</strong><br>
+                        <i class="plate__name--description">With white celery puree</i>
+                    </div>
+                    <span class="plate__price">40€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Pan-Fried Lobster</strong><br>
+                        <i class="plate__name--description">With mashed sweet potatoes</i>
+                    </div>
+                    <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Braised Ox Tail</strong><br>
+                        <i class="plate__name--description">With wold rice and lemon zest</i>
+                    </div>
+                    <span class="plate__price">44€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
         </section>
-
+        
         <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">DESS</span>ERTS</h3>
-        
-        <ul class="menu__list"> 
-            <li class="plate">
-                <strong>Chocolate and Hazelnut Macaroons</strong><br>
-                <i class="plate__description">With caramel butter ice cream</i>
-                <span class="plate__price">18€</span>
-            </li>
-            <li class="plate">
-                <strong>Baba au Rhum</strong><br>
-                <i class="plate__description">With lemon drizzle</i>
-                <span class="plate__price">22€</span>
-            </li>
-            <li class="plate">
-                <strong>Lemon Meringue Pie</strong><br>
-                <i class="plate__description">Destructured</i>
-                <span class="plate__price">23€</span>
-            </li>
-        </ul>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">DESS</span>ERTS</h3>
+            
+            <ul class="menu__list"> 
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Chocolate and Hazelnut Macaroons</strong><br>
+                        <i class="plate__name--description">With caramel butter ice cream</i>
+                    </div>
+                    <span class="plate__price">18€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Baba au Rhum</strong><br>
+                        <i class="plate__name--description">With lemon drizzle</i>
+                    </div>
+                    <span class="plate__price">22€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Lemon Meringue Pie</strong><br>
+                        <i class="plate__name--description">Destructured</i>
+                    </div>
+                    <span class="plate__price">23€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
         </section>
-
+        
         <button class="btn btn--order">Order</button>
-
+        
     </main>
     
     <footer class="footer footer--menu">
@@ -107,6 +162,6 @@
             <li><a class="link--footer" href="sebastien.ducatte@gmail.com"> Contact</a></li>
         </ul>
     </footer>
-
+    
 </body>
 </html>

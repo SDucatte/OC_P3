@@ -34,10 +34,6 @@
   border-bottom: #99E2D0 3px solid;
 }
 
-.menu__list {
-  padding-left: 1.7rem;
-}
-
 .menu__subtitle {
   font-size: 1rem;
   margin-bottom: 0;
@@ -152,17 +148,23 @@ li {
 }
 .fav--on {
   opacity: 0;
+  color: white;
 }
 .fav--off {
   opacity: 1;
+}
+.fav--menu {
+  padding-right: 1rem;
 }
 
 .section__restaurant--icone:hover .fav--off {
   opacity: 0;
 }
 .section__restaurant--icone:hover .fav--on {
-  opacity: 0.8;
+  opacity: 1;
   color: #9356DC;
+  transition: color 1000ms;
+  transform-origin: bottom;
 }
 
 .footer {
@@ -197,7 +199,6 @@ li {
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #eaeaea;
   padding: 0.6rem;
   border-top-right-radius: 2.5rem;
@@ -210,31 +211,85 @@ li {
   position: relative;
 }
 
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
 .plate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 1rem;
   background-color: white;
-  padding: 0.7rem;
-  position: relative;
-  right: 2rem;
-  margin-top: 1rem;
+  padding: 0;
   margin-bottom: 1rem;
   font-size: 0.9rem;
-  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  transition: display 2s ease-in-out;
+  animation: plate 1000ms linear 1s;
+  opacity: 0;
 }
-.plate:hover {
+.plate:hover .plate__animation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 3rem;
+  width: 20%;
   background-color: #99E2D0;
-  transform: translateX(-25%);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  animation: check 400ms linear forwards;
+  transform-origin: 50% 0%;
+  opacity: 1;
+}
+.plate:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition: transform linear 400ms;
+}
+.plate:hover .plate__price {
+  transform: translate(-120%);
+  transition: transform 400ms;
 }
 
-.plate__description {
-  font-size: 0.7rem;
+.plate__animation {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 0%;
+}
+
+.fa-check-circle {
+  color: white;
+}
+
+.plate__name {
+  max-width: 12.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.plate__name--description {
+  font-size: 0.8rem;
   font-style: normal;
+  overflow: hidden;
 }
 
 .plate__price {
-  float: right;
+  display: inline-block;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 14rem;
 }
 
 .photo {
@@ -259,6 +314,34 @@ li {
   padding-bottom: 1rem;
   margin: 0px;
   top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+@keyframes plate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entree {
+  animation: plate 250ms linear forwards 1s;
+}
+
+.main-dish {
+  animation: plate 250ms linear forwards 2s;
+}
+
+.dessert {
+  animation: plate 250ms linear forwards 3s;
 }
 
 body {
@@ -305,14 +388,29 @@ body {
   margin-bottom: 3rem;
 }
 .btn:hover {
-  opacity: 0.8;
+  filter: brightness(150%);
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .return {
   display: flex;
   align-items: center;
-  color: black;
+}
+
+.loader {
+  animation: loading 3s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.after-loading::after {
+  display: none;
 }
 
 .section--loader {

@@ -12,89 +12,142 @@
     
     <header>
         <div class="link return">
-            <a href="index.html"><i class="fas fa-arrow-left fa-lg"></i></a><h1 class="title title--menu">ohmyfood</h1>  
+            <a href="index.html"><span class="link"><i class="fas fa-arrow-left fa-lg"></i></span></a><h1 class="title title--menu">ohmyfood</h1>  
         </div>
     </header>
     
-     <img class="photo" src="images/bastille.jpg" alt="image_plat_restaurant_bastille">
+    <img class="photo" src="images/bastille.jpg" alt="image_plat_restaurant_bastille">
     
+    
+
     <main class="menu">
         
-        <h2 class="title title--restaurant">Bastille<i class="far fa-heart"></i></h2> 
+        <h2 class="title title--restaurant">
+            Bastille
+            <span class="fav--menu">
+                <i class="far fa-heart"></i>
+            </span>
+        </h2> 
         
         <section>
             <h3 class="menu__subtitle"><span class="menu__subtitle--underline">ENTR</span>EES</h3>
             
             <ul class="menu__list">
-                <li class="plate">
-                    <strong>Citrus Squid Carpaccio</strong><br>
-                    <i class="plate__description">with orangfe zest</i>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Citrus Squid Carpaccio</strong><br>
+                        <i class="plate__name--description">with orangfe zest</i>
+                    </div>
                     <span class="plate__price">25€</span>
-                    <!-- rajouter une icone -->
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </li>
-                <li class="plate">
-                    <strong>Grandmother's Vegetable Soup</strong><br>
-                    <i class="plate__description">Carrots, parsnips Jerusalem artichoke</i>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Grandmother's Vegetable Soup</strong><br>
+                        <i class="plate__name--description">Carrots, parsnips Jerusalem artichoke</i>
+                    </div>
                     <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </li>
-                <li class="plate">
-                    <strong>Onion Soup</strong><br>
-                    <i class="plate__description">Revisited</i>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Onion Soup</strong><br>
+                        <i class="plate__name--description">Revisited</i>
+                    </div>
                     <span class="plate__price">20€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </li>
             </ul>
+       
         </section>
-
-        <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">MAIN</span>DISH</h3>
         
-        <ul class="menu__list">
-            <li class="plate">
-                <strong>Scallops</strong><br>
-                <i class="plate__description">with mashed parsnip</i>
-                <span class="plate__price">40€</span>
-            </li>
-            <li class="plate">
-                <strong>Magret de canard</strong><br>
-                <i class="plate__description">with mashed potatoes</i>
-                <span class="plate__price">35€</span>
-            </li>
-            <li class="plate">
-                <strong>Game Hen</strong><br>
-                <i class="plate__description">with vegetable gnoochis</i>
-                <span class="plate__price">44€</span>
-            </li>
-        </ul>
-
-        </section>
-
         <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">DESS</span>ERTS</h3>
-        
-        <ul class="menu__list"> 
-            <li class="plate">
-                <strong>Floral Ice Cream</strong><br>
-                <i class="plate__description">with hazelnut butter</i>
-                <span class="plate__price">18€</span>
-            </li>
-            <li class="plate">
-                <strong>Chocolat Lava Cake</strong><br>
-                <i class="plate__description">Revisited</i>
-                <span class="plate__price">22€</span>
-            </li>
-            <li class="plate">
-                <strong>Napolean</strong><br>
-                <i class="plate__description">with blueberries and marzipan</i>
-                <span class="plate__price">23€</span>
-            </li>
-        </ul>
-
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">MAIN</span>DISH</h3>
+           
+            <ul class="menu__list">
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Scallops</strong><br>
+                        <i class="plate__name--description">with mashed parsnip</i>
+                    </div>
+                    <span class="plate__price">40€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+          
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Magret de canard</strong><br>
+                        <i class="plate__name--description">with mashed potatoes</i>
+                    </div>
+                    <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Game Hen</strong><br>
+                        <i class="plate__name--description">with vegetable gnoochis</i>
+                    </div>
+                    <span class="plate__price">44€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
+            
         </section>
-
+        
+        <section>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">DESS</span>ERTS</h3>
+            
+            <ul class="menu__list"> 
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Floral Ice Cream</strong><br>
+                        <i class="plate__name--description">with hazelnut butter</i>
+                    </div>
+                    <span class="plate__price">18€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Chocolat Lava Cake</strong><br>
+                        <i class="plate__name--description">Revisited</i>
+                    </div>
+                    <span class="plate__price">22€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Napolean</strong><br>
+                        <i class="plate__name--description">with blueberries and marzipan</i>
+                    </div>
+                    <span class="plate__price">23€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
+            
+        </section>
+        
         <button class="btn btn--order">Order</button>
-
+        
     </main>
-    
+</div>
     <footer class="footer footer--menu">
         <ul class="footer--list">
             <li class="title title--footer">ohmyfood</li>

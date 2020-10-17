@@ -12,7 +12,7 @@
     
     <header>
         <div class="return">
-            <a href="index.html"><i class="fas fa-arrow-left fa-lg"></i></a><h1 class="title title--menu">ohmyfood</h1>  
+            <a href="index.html"><span class="link"><i class="fas fa-arrow-left fa-lg"></i></span></a><h1 class="title title--menu">ohmyfood</h1>  
         </div> 
     </header>
     
@@ -20,76 +20,126 @@
     
     <main class="menu">
         
-        <h2 class="title title--restaurant">Le Gourmand<i class="far fa-heart"></i></h2> 
-
-        <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">ENTR</span>EES</h3>
+        <h2 class="title title--restaurant">
+            Le Gourmand
+            <span class="fav--menu">
+                <i class="far fa-heart"></i>
+            </span>
+        </h2> 
         
-        <ul class="menu__list">
-            <li class="plate">
-                <strong>Tuna Carpaccio</strong><br>
-                <i class="plate__description">Seasoned with yuzu</i>
-                <span class="plate__price">25€</span>
-            </li>
-            <li class="plate">
-                <strong>Crunchy Lobster Croquets</strong><br>
-                <i class="plate__description">With seasonal vegetables</i>
-                <span class="plate__price">35€</span>
-            </li>
-            <li class="plate">
-                <strong>Mushroom Soup</strong><br>
-                <i class="plate__description">With truffles</i>
-                <span class="plate__price">20€</span>
-            </li>
-        </ul>
-        </section>
-
         <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">MAIN</span>DISH</h3>
-        
-        <ul class="menu__list">
-            <li class="plate">
-                <strong>Roast Chicken with Provincal Herbs</strong><br>
-                <i class="plate__description">With truffles cream</i>
-                <span class="plate__price">40€</span>
-            </li>
-            <li class="plate">
-                <strong>Roasted Lobster</strong><br>
-                <i class="plate__description">With seasonal vegetables</i>
-                <span class="plate__price">35€</span>
-            </li>
-            <li class="plate">
-                <strong>Angust Beef Ribs</strong><br>
-                <i class="plate__description">With mashed parshnips</i>
-                <span class="plate__price">44€</span>
-            </li>
-        </ul>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">ENTR</span>EES</h3>
+            
+            <ul class="menu__list">
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Tuna Carpaccio</strong><br>
+                        <i class="plate__name--description">Seasoned with yuzu</i>
+                    </div>
+                    <span class="plate__price">25€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Crunchy Lobster Croquets</strong><br>
+                        <i class="plate__name--description">With seasonal vegetables</i>
+                    </div>
+                    <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate entree">
+                    <div class="plate__name">
+                        <strong>Mushroom Soup</strong><br>
+                        <i class="plate__name--description">With truffles</i>
+                    </div>
+                    <span class="plate__price">20€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
         </section>
-
+        
         <section>
-        <h3 class="menu__subtitle"><span class="menu__subtitle--underline">DESS</span>ERTS</h3>
-        
-        <ul class="menu__list"> 
-            <li class="plate">
-                <strong>Assorted Dessert Plate</strong><br>
-                <i class="plate__description">Chef's choice</i>
-                <span class="plate__price">18€</span>
-            </li>
-            <li class="plate">
-                <strong>Crème Brulée</strong><br>
-                <i class="plate__description">Revisited</i>
-                <span class="plate__price">22€</span>
-            </li>
-            <li class="plate">
-                <strong>Tiramisu</strong><br>
-                <i class="plate__description">With hazelnuts</i>
-                <span class="plate__price">23€</span>
-            </li>
-        </ul>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">MAIN</span>DISH</h3>
+            
+            <ul class="menu__list">
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Roast Chicken with Provincal Herbs</strong><br>
+                        <i class="plate__name--description">With truffles cream</i>
+                    </div>
+                    <span class="plate__price">40€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Roasted Lobster</strong><br>
+                        <i class="plate__name--description">With seasonal vegetables</i>
+                    </div>
+                    <span class="plate__price">35€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate main-dish">
+                    <div class="plate__name">
+                        <strong>Angust Beef Ribs</strong><br>
+                        <i class="plate__name--description">With mashed parshnips</i>
+                    </div>
+                    <span class="plate__price">44€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
         </section>
-
+        
+        <section>
+            <h3 class="menu__subtitle"><span class="menu__subtitle--underline">DESS</span>ERTS</h3>
+            
+            <ul class="menu__list"> 
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Assorted Dessert Plate</strong><br>
+                        <i class="plate__name--description">Chef's choice</i>
+                    </div>
+                    <span class="plate__price">18€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Crème Brulée</strong><br>
+                        <i class="plate__name--description">Revisited</i>
+                    </div>
+                    <span class="plate__price">22€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+                <li class="plate dessert">
+                    <div class="plate__name">
+                        <strong>Tiramisu</strong><br>
+                        <i class="plate__name--description">With hazelnuts</i>
+                    </div>
+                    <span class="plate__price">23€</span>
+                    <div class="plate__animation">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
         <button class="btn btn--order">Order</button>
-
+        
     </main> 
     
     <footer class="footer footer--menu">

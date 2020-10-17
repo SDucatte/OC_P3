@@ -41,9 +41,13 @@
     position: absolute;
     &--on {
         opacity: 0;
+        color: white;
     } 
     &--off {
         opacity: 1;
+    }
+    &--menu {
+        padding-right: 1rem;
     }
 }
 
@@ -53,8 +57,10 @@
             opacity: 0;
         }
         .fav--on {
-            opacity: 0.8;
+            opacity: 1;
             color: #9356DC;
+            transition: color 1000ms;
+            transform-origin: bottom;
         }
     }
 }

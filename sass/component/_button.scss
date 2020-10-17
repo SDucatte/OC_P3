@@ -12,7 +12,7 @@
             margin-bottom: 3rem;
             }
             &:hover {
-                opacity: 0.8;
+                filter: brightness(150%);
                 box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
             }
     }
@@ -20,5 +20,4 @@
 .return {
     display: flex;
     align-items: center;
-    color: black;
 }
