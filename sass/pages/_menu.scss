@@ -19,14 +19,7 @@
     position: absolute;
 }
 
-@keyframes check{
-    0% {
-        width: 0%;
-    }
-    100%{
-        width: 20%;
-    }
-}
+
 
 .plate {
     display: flex;
@@ -40,10 +33,8 @@
     margin-bottom: 1rem;
     font-size: 0.9rem;
     height: 3rem;
-    overflow: hidden;
-    animation: plate 1000ms linear 1s backwards;
+    animation: plate 1000ms linear 1s forwards;
     opacity: 0;
-    
     &:hover {
         .plate__animation {
             display: flex;
@@ -56,9 +47,8 @@
             animation: check 400ms ease-in-out backwards;
             transform-origin: 50% 0%;
             opacity: 1;
-            transition: check ease-in-out 400ms;
+            
         }
-        
         .fa-check-circle {  
             transform: rotate(360deg);
             transition: transform linear 400ms;
@@ -67,17 +57,20 @@
             transform: translate(-120%);
             transition: transform linear 400ms;
         }
-        
         .plate__name--hidden {
             animation: hide linear forwards;
             transform: translate(-350%);
             transition: transform linear 400ms;
         }
-
         .plate__name {
             animation: reduc linear forwards;
         }
     }   
+}
+
+@keyframes check {
+    0% { width: 0%; }
+    100% { width: 20%; }
 }
 
 @keyframes reduc {
@@ -86,15 +79,12 @@
 }
 
 @keyframes hide {
-    0% {
-      
-        opacity: 0;
-    }
-    100%{
-      
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
+
+
+
 .plate__name--hidden{
     opacity: 0;
     padding: 0;
@@ -178,16 +168,10 @@
     100% {opacity: 1;}
 }
 
-.entree {
-    animation: plate 250ms linear forwards 1s;
-}
+.entree { animation: plate 250ms linear forwards 1s; }
 
-.main-dish{
-    animation: plate 250ms linear forwards 2s;
-}
+.main-dish{ animation: plate 250ms linear forwards 2s; }
 
-.dessert{
-    animation: plate 250ms linear forwards 3s;
-}
+.dessert{ animation: plate 250ms linear forwards 3s; }
 
 
