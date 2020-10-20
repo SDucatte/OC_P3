@@ -13,6 +13,12 @@
     position: relative;
 }
 
+.photo {
+    width: 18rem;
+    height: 12rem;
+    position: absolute;
+}
+
 @keyframes check{
     0% {
         width: 0%;
@@ -21,8 +27,6 @@
         width: 20%;
     }
 }
-
-
 
 .plate {
     display: flex;
@@ -66,7 +70,7 @@
         
         .plate__name--hidden {
             animation: hide linear forwards;
-            transform: translate(-300%);
+            transform: translate(-350%);
             transition: transform linear 400ms;
         }
 
@@ -98,9 +102,9 @@
     padding-bottom: 0.3rem;
     margin: 0;
     text-align: center;
-    z-index: 1;
+ 
     position: absolute;
-    top: 1.5rem;
+    top: 1.4rem;
     left: 13rem;
     font-weight: bold;
 }
@@ -122,15 +126,15 @@
 
 .plate__name {
     max-width: 12.5rem;
-    font-size: 0.75rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.25rem;
     overflow: hidden;
     white-space: nowrap;
     &--description {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
         font-style: normal;
-        
-        
+        white-space: normal;
+        overflow: hidden;
     }
 }
 
@@ -140,15 +144,9 @@
     font-size: 0.7rem;
     padding: 0.5rem;
     position: absolute;
-    top: 1.5rem;
+    top: 1.4rem;
     left: 14rem;
     overflow: visible;
-}
-
-.photo {
-    width: 18rem;
-    height: 12rem;
-    position: absolute;
 }
 
 .title {
@@ -157,12 +155,12 @@
     &--menu {
         text-align: center;
         margin-bottom: 0.8rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-left: auto;
         margin-right: auto;
     }
     &--restaurant {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding-bottom: 1rem;
         margin: 0px;
         top: 0.2rem;
