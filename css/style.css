@@ -226,28 +226,28 @@ li {
   border-radius: 1rem;
   background-color: white;
   padding: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   margin-bottom: 1rem;
   font-size: 0.9rem;
   height: 3rem;
   overflow: hidden;
   transition: display 2s ease-in-out;
-  animation: plate 1000ms linear 1s;
+  animation: plate 1000ms linear 1s backwards;
   opacity: 0;
 }
 .plate:hover .plate__animation {
   display: flex;
-  padding: 0;
-  margin: 0;
   height: 3rem;
   width: 20%;
-  background-color: #99E2D0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   justify-content: center;
   align-items: center;
-  animation: check 400ms linear forwards;
+  animation: check 400ms ease-in-out backwards;
   transform-origin: 50% 0%;
   opacity: 1;
+  transition: check ease-in-out 400ms;
 }
 .plate:hover .fa-check-circle {
   transform: rotate(360deg);
@@ -261,9 +261,12 @@ li {
 .plate__animation {
   opacity: 0;
   padding: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   margin: 0;
   text-align: center;
   width: 0%;
+  background-color: #99E2D0;
 }
 
 .fa-check-circle {
@@ -397,61 +400,83 @@ body {
   align-items: center;
 }
 
-.loader {
-  animation: loading 3s;
-}
-
 @keyframes loading {
   0% {
     opacity: 1;
   }
   100% {
+    opacity: 1;
+  }
+}
+.loading {
+  opacity: 0;
+  animation: loading 3s;
+  position: relative;
+  z-index: 1;
+  left: 5.5rem;
+  top: 15rem;
+}
+
+.loader--bars:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 6rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: grow 1.5s linear infinite;
+}
+
+.loader--bars::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 1.5rem;
+  height: 6rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: grow 1.5s linear -0.33s infinite;
+}
+
+.loader--bars span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 1.5rem;
+  height: 6rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: grow 1.5s linear -0.66s infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
     opacity: 0;
   }
 }
-.after-loading::after {
-  display: none;
+.blurred-background {
+  animation: blurred 3s;
 }
 
-.section--loader {
-  background-color: #9356DC;
-  width: 100%;
-  height: 100%;
-}
-
-.loader {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-}
-
-.loader--quart {
-  border-radius: 50px;
-  border: 6px solid rgba(255, 255, 255, 0.4);
-  width: 50px;
-  height: 50px;
-  position: relative;
-}
-
-.loader--quart:after {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  bottom: -6px;
-  right: -6px;
-  border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: #ffffff;
-  animation: spin 5s linear 0s infinite;
-}
-
-@keyframes spin {
+@keyframes blurred {
   0% {
-    transform: rotate(0deg);
+    opacity: 0.3;
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 0.3;
   }
 }
 

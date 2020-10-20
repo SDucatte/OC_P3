@@ -23,6 +23,7 @@
 }
 
 
+
 .plate {
     display: flex;
     align-items: center;
@@ -30,29 +31,29 @@
     border-radius: 1rem;
     background-color: white;
     padding: 0;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     margin-bottom: 1rem;
     font-size: 0.9rem;
     height: 3rem;
     overflow: hidden;
     transition: display 2s ease-in-out;
-    animation: plate 1000ms linear 1s;
+    animation: plate 1000ms linear 1s backwards;
     opacity: 0;
     
     &:hover {
         .plate__animation {
             display: flex;
-            padding: 0;
-            margin: 0;
             height: 3rem;
             width: 20%;
-            background-color: #99E2D0;
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
             justify-content: center;
             align-items: center;
-            animation: check 400ms linear forwards;
+            animation: check 400ms ease-in-out backwards;
             transform-origin: 50% 0%;
             opacity: 1;
+            transition: check ease-in-out 400ms;
         }
         
         .fa-check-circle {  
@@ -71,9 +72,12 @@
 .plate__animation {
     opacity: 0;
     padding: 0;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     margin: 0;
     text-align: center;
     width: 0%;
+    background-color: #99E2D0;
 }
 
 .fa-check-circle {
