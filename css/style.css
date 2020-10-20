@@ -35,7 +35,7 @@
 }
 
 .menu__subtitle {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0;
 }
 
@@ -232,7 +232,6 @@ li {
   font-size: 0.9rem;
   height: 3rem;
   overflow: hidden;
-  transition: display 2s ease-in-out;
   animation: plate 1000ms linear 1s backwards;
   opacity: 0;
 }
@@ -255,7 +254,45 @@ li {
 }
 .plate:hover .plate__price {
   transform: translate(-120%);
-  transition: transform 400ms;
+  transition: transform linear 400ms;
+}
+.plate:hover .plate__name--hidden {
+  animation: hide linear forwards;
+  transform: translate(-300%);
+  transition: transform linear 400ms;
+}
+.plate:hover .plate__name {
+  animation: reduc linear forwards;
+}
+
+@keyframes reduc {
+  0% {
+    width: 12.5rem;
+  }
+  100% {
+    width: 9.5rem;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.plate__name--hidden {
+  opacity: 0;
+  padding: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 1.5rem;
+  left: 13rem;
+  font-weight: bold;
 }
 
 .plate__animation {
@@ -275,14 +312,14 @@ li {
 
 .plate__name {
   max-width: 12.5rem;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   padding: 0.5rem;
   overflow: hidden;
+  white-space: nowrap;
 }
 .plate__name--description {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   font-style: normal;
-  overflow: hidden;
 }
 
 .plate__price {
@@ -291,8 +328,9 @@ li {
   font-size: 0.7rem;
   padding: 0.5rem;
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   left: 14rem;
+  overflow: visible;
 }
 
 .photo {
@@ -308,12 +346,12 @@ li {
 .title--menu {
   text-align: center;
   margin-bottom: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 .title--restaurant {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 1rem;
   margin: 0px;
   top: 0.2rem;
@@ -322,8 +360,6 @@ li {
 }
 
 .menu__list {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 0;
 }
 
