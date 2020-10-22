@@ -1,18 +1,17 @@
 .section__restaurant {
     position: relative;
-    margin-bottom: 1.5rem;
     max-width: max-content;
     font-family: "roboto";
-    align-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -0.5rem;
     img {
         max-width: 15rem;
         width: auto;
         height: auto;
         border-top-left-radius: 0.75rem;
         border-top-right-radius: 0.75rem;
-        margin: 0%;
+        margin: 0;
     }
 }
 
@@ -21,23 +20,20 @@
     border-bottom-left-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
     position: relative;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
     padding: 1rem;
     padding-left: 0.5rem;
-    top: -1.5rem;
+    top: -1rem;
 }
 
 .section__restaurant--icone {
     position: relative;
-    left: 2.5rem;
-    top: -1.5rem;
-    height: fit-content;
-    width: fit-content;
+    left: 12.5rem;
+    top: -4rem;
 }
 
 .fav {
-    left: 11rem;
-    top: -2.5rem;
+    font-weight: lighter;
     position: absolute;
     &--on {
         opacity: 0;
@@ -45,9 +41,6 @@
     } 
     &--off {
         opacity: 1;
-    }
-    &--menu {
-        padding-right: 1rem;
     }
 }
 
@@ -59,7 +52,7 @@
         .fav--on {
             opacity: 1;
             color: #9356DC;
-            transition: color 1000ms;
+            transition: color 400ms;
             transform-origin: bottom;
         }
     }

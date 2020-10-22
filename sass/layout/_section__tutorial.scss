@@ -3,19 +3,18 @@
     flex-direction: column;
     padding: 0;
     margin-left: 0;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     font-size: 0.8rem;
 }
 
 .tutorial__step {
     background: #f6f6f6;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1.2em;
-    padding-left: 2.8rem;
-    display: inline-block;
-    text-align: left;
     width: 11rem;
+    padding-left: 3rem;
+    box-shadow: 0 5px 5px #aaa;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tutorial__number {
@@ -24,10 +23,18 @@
     color: #ffffff;
     text-align: center;
     padding: 0.2rem;
-    width: 1.1rem;
+    width: 0.75rem;
+    height: 0.75rem;
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     left: -0.5rem;
+    font-size: 0.5rem;
+}
+
+.tutorial__icone {
+    position: relative;
+    left: 1rem;
+    top: 2rem;
 }
 
 ul {

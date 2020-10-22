@@ -1,10 +1,10 @@
 .menu {
     display: flex;
     flex-direction: column;
-    background-color: #eaeaea;
+    background-color: whitesmoke;
     padding: 0.6rem;
-    border-top-right-radius: 2.5rem;
-    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
     position: relative;
     top: 10rem;
 }
@@ -19,18 +19,17 @@
     position: absolute;
 }
 
-
-
 .plate {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 15px #aaa;
     background-color: white;
     padding: 0;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
     height: 3rem;
     animation: plate 1000ms linear 1s forwards;
@@ -40,14 +39,13 @@
             display: flex;
             height: 3rem;
             width: 20%;
-            border-top-right-radius: 1rem;
-            border-bottom-right-radius: 1rem;
+            border-top-right-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
             justify-content: center;
             align-items: center;
             animation: check 400ms ease-in-out backwards;
             transform-origin: 50% 0%;
             opacity: 1;
-            
         }
         .fa-check-circle {  
             transform: rotate(360deg);
@@ -83,22 +81,6 @@
     100% { opacity: 1; }
 }
 
-
-
-.plate__name--hidden{
-    opacity: 0;
-    padding: 0;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin: 0;
-    text-align: center;
- 
-    position: absolute;
-    top: 1.4rem;
-    left: 13rem;
-    font-weight: bold;
-}
-
 .plate__animation {
     opacity: 0;
     padding: 0;
@@ -115,16 +97,12 @@
 }
 
 .plate__name {
-    max-width: 12.5rem;
+    max-width: 15rem;
     font-size: 0.8rem;
     padding: 0.25rem;
-    overflow: hidden;
-    white-space: nowrap;
     &--description {
         font-size: 0.7rem;
         font-style: normal;
-        white-space: normal;
-        overflow: hidden;
     }
 }
 
@@ -174,4 +152,28 @@
 
 .dessert{ animation: plate 250ms linear forwards 3s; }
 
+.fav-menu {
+    position: relative;
+    padding-right: 0.5rem;
+    &:hover {
+        .fav-menu--off {
+            opacity: 0;
+        }
+        .fav-menu--on {
+            opacity: 1;
+            color: #9356DC;
+            transition: color 400ms;
+            transform-origin: bottom;
+        }
+    }
+}
 
+.fav-menu--off {
+    position: absolute;
+    opacity: 1;
+}
+
+.fav-menu--on {
+    opacity: 0;
+    color: white;
+}

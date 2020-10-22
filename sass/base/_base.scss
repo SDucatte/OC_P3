@@ -7,6 +7,11 @@
     background-color: #f6f6f6;
         &--whitebackground {
             background-color: white;
+            padding: 0;
+            margin-left: 0;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            font-size: 0.8rem;
         }
 }
 
