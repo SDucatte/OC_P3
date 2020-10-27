@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* base */
 .section {
   display: flex;
@@ -5,15 +6,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 18rem;
+  max-width: 20rem;
   background-color: #f6f6f6;
 }
 .section--whitebackground {
   background-color: white;
   padding: 0;
   margin-left: 0;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   font-size: 0.8rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 @font-face {
@@ -29,10 +31,6 @@
 .section__subtitle {
   padding-left: 1.5rem;
   padding-top: 1.5rem;
-}
-
-.section__subtitle--intro {
-  text-align: center;
 }
 
 .menu__subtitle--underline {
@@ -55,124 +53,6 @@
 }
 
 /* layout */
-.section__intro {
-  text-align: center;
-  background: #f6f6f6;
-  padding-bottom: 15px;
-}
-
-.section__intro--search_bar {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  background: #eaeaea;
-  margin: 0;
-}
-
-.tutorial {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin-left: 0;
-  font-size: 0.8rem;
-}
-
-.tutorial__step {
-  background: #f6f6f6;
-  border-radius: 1rem;
-  padding: 1.2em;
-  width: 11rem;
-  padding-left: 3rem;
-  box-shadow: 0 5px 5px #aaa;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tutorial__number {
-  border-radius: 50%;
-  background: #9356DC;
-  color: #ffffff;
-  text-align: center;
-  padding: 0.2rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  position: absolute;
-  top: 2rem;
-  left: -0.5rem;
-  font-size: 0.5rem;
-}
-
-.tutorial__icone {
-  position: relative;
-  left: 1rem;
-  top: 2rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  position: relative;
-}
-
-.section__restaurant {
-  position: relative;
-  max-width: max-content;
-  font-family: "roboto";
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -0.5rem;
-}
-.section__restaurant img {
-  max-width: 15rem;
-  width: auto;
-  height: auto;
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-  margin: 0;
-}
-
-.section__restaurant--description {
-  background-color: white;
-  border-bottom-left-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-  position: relative;
-  line-height: 1.25rem;
-  padding: 1rem;
-  padding-left: 0.5rem;
-  top: -1rem;
-}
-
-.section__restaurant--icone {
-  position: relative;
-  left: 12.5rem;
-  top: -4rem;
-}
-
-.fav {
-  font-weight: lighter;
-  position: absolute;
-}
-.fav--on {
-  opacity: 0;
-  color: white;
-}
-.fav--off {
-  opacity: 1;
-}
-
-.section__restaurant--icone:hover .fav--off {
-  opacity: 0;
-}
-.section__restaurant--icone:hover .fav--on {
-  opacity: 1;
-  color: #9356DC;
-  transition: color 400ms;
-  transform-origin: bottom;
-}
-
 .footer {
   background: #353535;
   color: white;
@@ -202,7 +82,49 @@ li {
   left: 1.9rem;
 }
 
+.title {
+  font-family: "shrikhand";
+  font-weight: lighter;
+}
+.title--header {
+  text-align: center;
+  padding-top: 0.4rem;
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title--header--footer {
+  text-align: left;
+  font-size: 1.1rem;
+  padding-top: 1.3rem;
+  padding-bottom: 0.6rem;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .section .section--whitebackground {
+    width: 40rem;
+  }
+}
 /* page */
+/* Bloc comprenant le header, l'image du restaurant et le nom du restaurant avec l'icone favoris */
+.title {
+  font-family: "shrikhand";
+  position: relative;
+}
+.title--menu {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title--restaurant {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -214,14 +136,51 @@ li {
   top: 10rem;
 }
 
-.icone--palette {
-  position: relative;
-}
-
 .photo {
   width: 18rem;
   height: 12rem;
   position: absolute;
+}
+
+/* Bloc comprenant toutes les propriétés sur les plats et les animations lors de leur selection */
+.plate__name {
+  max-width: 12.5rem;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+}
+.plate__name--description {
+  font-size: 0.7rem;
+  font-style: normal;
+}
+
+.plate__animation {
+  opacity: 0;
+  padding: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin: 0;
+  text-align: center;
+  width: 0%;
+  background-color: #99E2D0;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 1rem;
+}
+
+.plate__price {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1.4rem;
+  left: 14rem;
+}
+
+.menu__list {
+  padding-left: 0;
 }
 
 .plate {
@@ -285,74 +244,7 @@ li {
     width: 9.5rem;
   }
 }
-@keyframes hide {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.plate__animation {
-  opacity: 0;
-  padding: 0;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  margin: 0;
-  text-align: center;
-  width: 0%;
-  background-color: #99E2D0;
-}
-
-.fa-check-circle {
-  color: white;
-}
-
-.plate__name {
-  max-width: 15rem;
-  font-size: 0.8rem;
-  padding: 0.25rem;
-}
-.plate__name--description {
-  font-size: 0.7rem;
-  font-style: normal;
-}
-
-.plate__price {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 0.7rem;
-  padding: 0.5rem;
-  position: absolute;
-  top: 1.4rem;
-  left: 14rem;
-  overflow: visible;
-}
-
-.title {
-  font-family: "shrikhand";
-  position: relative;
-}
-.title--menu {
-  text-align: center;
-  margin-bottom: 0.8rem;
-  font-size: 1.8rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.title--restaurant {
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  margin: 0px;
-  top: 0.2rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__list {
-  padding-left: 0;
-}
-
+/* Animation en arrivant sur le menu */
 @keyframes plate {
   0% {
     opacity: 0;
@@ -373,30 +265,6 @@ li {
   animation: plate 250ms linear forwards 3s;
 }
 
-.fav-menu {
-  position: relative;
-  padding-right: 0.5rem;
-}
-.fav-menu:hover .fav-menu--off {
-  opacity: 0;
-}
-.fav-menu:hover .fav-menu--on {
-  opacity: 1;
-  color: #9356DC;
-  transition: color 400ms;
-  transform-origin: bottom;
-}
-
-.fav-menu--off {
-  position: absolute;
-  opacity: 1;
-}
-
-.fav-menu--on {
-  opacity: 0;
-  color: white;
-}
-
 body {
   width: 18rem;
   font-family: "roboto";
@@ -407,24 +275,133 @@ body {
   margin-right: auto;
 }
 
-.title {
-  font-family: "shrikhand";
-  font-weight: lighter;
-}
-.title--header {
+/* Premier bloc avec la barre et le bouton qui permettra de géolocaliser les restaurants */
+.section__intro {
   text-align: center;
-  padding-top: 0.4rem;
+  background: #f6f6f6;
+  padding-bottom: 15px;
+}
+
+.section__intro--search_bar {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background: #eaeaea;
+  margin: 0;
+}
+
+.section__subtitle--intro {
+  text-align: center;
+}
+
+/* Second bloc qui explique comment fonctionne l'application */
+.tutorial {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background: #f6f6f6;
+  border-radius: 0.75rem;
+  width: 14rem;
+  box-shadow: 0 5px 5px #aaa;
+  margin-bottom: 0.75rem;
+  z-index: 0;
+}
+.tutorial:hover {
+  background-color: #ffdff6;
+}
+.tutorial:hover .tutorial__icone {
+  color: #9356DC;
+}
+
+.tutorial__step {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.tutorial__number {
+  border-radius: 50%;
+  background: #9356DC;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  top: 1rem;
+  left: -0.5rem;
+  font-size: 0.5rem;
+  z-index: 1;
+}
+
+.tutorial__icone {
+  position: absolute;
+  left: 1.75rem;
+  top: 1rem;
+  color: #909497;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 0.3rem;
   margin-bottom: 0.3rem;
-  font-size: 2.5rem;
+  position: relative;
+}
+
+/* Troisième bloc présentant sous forme de cartes les restaurants présent sur l'application ; au clic, on arrive sur leur menu */
+.section__restaurant {
+  position: relative;
+  max-width: max-content;
+  font-family: "roboto";
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -0.5rem;
+  width: 18rem;
 }
-.title--header--footer {
-  text-align: left;
-  font-size: 1.1rem;
-  padding-top: 1.3rem;
-  padding-bottom: 0.6rem;
-  font-weight: bolder;
+.section__restaurant img {
+  max-width: 15rem;
+  width: auto;
+  height: auto;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  margin: 0;
+}
+
+.section__restaurant--description {
+  background-color: white;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  position: relative;
+  line-height: 1.25rem;
+  padding: 1rem;
+  padding-left: 0.5rem;
+  top: -1rem;
+}
+
+.section__restaurant--icone {
+  position: relative;
+  left: 12.5rem;
+  top: -4rem;
+}
+
+.new {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.5rem;
+  background-color: #99E2D0;
+  color: #1D8348;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  font-size: 0.75rem;
 }
 
 /* compenent */
@@ -452,84 +429,120 @@ body {
   align-items: center;
 }
 
+/*
+
 @keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {opacity: 1;}
+    100% {opacity: 1;}
 }
+
 .loading {
-  opacity: 0;
-  animation: loading 3s;
-  position: relative;
-  z-index: 1;
-  left: 7rem;
-  top: 15rem;
+    opacity: 0;
+    animation: loading 3s;
+    position: relative;
+    z-index: 1;
+    left: 7rem;
+    top: 15rem;
 }
 
-.loader--bars:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0.5rem;
-  height: 3rem;
-  background: linear-gradient(#FF79DA, #9356DC);
-  animation: grow 1.5s linear infinite;
+.loader--bars:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.5rem;
+    height: 3rem;
+    background: linear-gradient($color-secondary, $color-primary);
+    animation: grow 1.5s linear infinite;
 }
 
-.loader--bars::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 15px;
-  top: 0;
-  width: 0.5rem;
-  height: 3rem;
-  background: linear-gradient(#FF79DA, #9356DC);
-  animation: grow 1.5s linear -0.33s infinite;
+.loader--bars::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 0.5rem;
+    height: 3rem;
+    background: linear-gradient($color-secondary, $color-primary);
+    animation: grow 1.5s linear -0.33s infinite;
 }
 
-.loader--bars span {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 30px;
-  top: 0;
-  width: 0.5rem;
-  height: 3rem;
-  background: linear-gradient(#FF79DA, #9356DC);
-  animation: grow 1.5s linear -0.66s infinite;
+.loader--bars span{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 0.5rem;
+    height: 3rem;
+    background: linear-gradient($color-secondary, $color-primary);
+    animation: grow 1.5s linear -.66s infinite;
 }
 
 @keyframes grow {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
+    0%{transform: scaleY(0); opacity: 0;}
+    50%{transform: scaleY(1); opacity: 1;}
+    100%{transform: scaleY(0); opacity: 0;}
 }
+
 .blurred-background {
-  animation: blurred 3s;
+    animation: blurred 3s;
 }
 
 @keyframes blurred {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 0.3;
-  }
+    0%{opacity: 0.3;}
+    100%{opacity: 0.3;}
+}
+
+*/
+/* Ajouter au favoris depuis la page d'acceuil */
+.fav {
+  font-weight: lighter;
+  position: absolute;
+}
+.fav--on {
+  opacity: 0;
+  color: white;
+}
+.fav--off {
+  opacity: 1;
+}
+
+.section__restaurant--icone:hover .fav--off {
+  opacity: 0;
+}
+.section__restaurant--icone:hover .fav--on {
+  opacity: 1;
+  color: #9356DC;
+  transition: color 400ms;
+  transform-origin: bottom;
+}
+
+/* Ajouter au favoris depuis le menu du restaurant */
+.fav-menu {
+  position: relative;
+  padding-right: 0.5rem;
+}
+.fav-menu:hover .fav-menu--off {
+  opacity: 0;
+}
+.fav-menu:hover .fav-menu--on {
+  opacity: 1;
+  color: #9356DC;
+  transition: color 400ms;
+  transform-origin: bottom;
+}
+
+.fav-menu--off {
+  position: absolute;
+  opacity: 1;
+}
+
+.fav-menu--on {
+  opacity: 0;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

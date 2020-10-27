@@ -4,16 +4,16 @@
 @import "base/typography";
 
 /* layout */ 
-@import "layout/section__intro";
-@import "layout/section__tutorial";
-@import "layout/section__restaurants";
 @import "layout/footer";
+@import "layout/header";
+@import "layout/tablet";
 
 /* page */
-@import "pages/home";
 @import "pages/menu";
 @import "pages/commun";
+@import "pages/landing-page";
 
 /* compenent */
 @import "component/button";
 @import "component/loader";
+@import "component/favorite";

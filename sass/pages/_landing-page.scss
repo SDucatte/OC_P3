@@ -1,0 +1,132 @@
+/* Premier bloc avec la barre et le bouton qui permettra de géolocaliser les restaurants */
+
+.section__intro {
+    text-align: center;
+    background: #f6f6f6;
+    padding-bottom: 15px;
+}
+
+.section__intro--search_bar {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: #eaeaea;
+    margin: 0;
+}
+
+.section__subtitle--intro {
+    text-align: center;
+}
+
+/* Second bloc qui explique comment fonctionne l'application */
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    background: #f6f6f6;
+    border-radius: 0.75rem;
+    width: 14rem;
+    box-shadow: 0 5px 5px #aaa;
+    margin-bottom: 0.75rem;
+    z-index: 0;
+    &:hover {
+        background-color: lighten($color-secondary, 20%);
+        .tutorial__icone{
+            color: $color-primary;
+        }
+    }
+}
+
+
+.tutorial__step {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.tutorial__number {
+    border-radius: 50%;
+    background: #9356DC;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.2rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 1rem;
+    left: -0.5rem;
+    font-size: 0.5rem;
+    z-index: 1;
+}
+
+.tutorial__icone {
+    position: absolute;
+    left: 1.75rem;
+    top: 1rem;
+    color: #909497 ;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+
+/* Troisième bloc présentant sous forme de cartes les restaurants présent sur l'application ; au clic, on arrive sur leur menu */
+
+.section__restaurant {
+    position: relative;
+    max-width: max-content;
+    font-family: "roboto";
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -0.5rem;
+    width: 18rem;
+    img {
+        max-width: 15rem;
+        width: auto;
+        height: auto;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+        margin: 0;
+    }
+}
+
+.section__restaurant--description {
+    background-color: white;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    position: relative;
+    line-height: 1.25rem;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    top: -1rem;
+}
+
+.section__restaurant--icone {
+    position: relative;
+    left: 12.5rem;
+    top: -4rem;
+}
+
+.new {
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+    background-color: #99E2D0;
+    color: #1D8348;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    font-size: 0.75rem;
+}

@@ -1,0 +1,54 @@
+/* Ajouter au favoris depuis la page d'acceuil */
+
+.fav {
+    font-weight: lighter;
+    position: absolute;
+    &--on {
+        opacity: 0;
+        color: white;
+    } 
+    &--off {
+        opacity: 1;
+    }
+}
+
+.section__restaurant--icone {
+    &:hover {
+        .fav--off {
+            opacity: 0;
+        }
+        .fav--on {
+            opacity: 1;
+            color: #9356DC;
+            transition: color 400ms;
+            transform-origin: bottom;
+        }
+    }
+}
+/* Ajouter au favoris depuis le menu du restaurant */
+
+.fav-menu {
+    position: relative;
+    padding-right: 0.5rem;
+    &:hover {
+        .fav-menu--off {
+            opacity: 0;
+        }
+        .fav-menu--on {
+            opacity: 1;
+            color: #9356DC;
+            transition: color 400ms;
+            transform-origin: bottom;
+        }
+    }
+}
+
+.fav-menu--off {
+    position: absolute;
+    opacity: 1;
+}
+
+.fav-menu--on {
+    opacity: 0;
+    color: white;
+}

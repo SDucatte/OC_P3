@@ -4,14 +4,15 @@
     margin-left: auto;
     margin-right: auto;
     width: 18rem;
+    max-width: 20rem;
     background-color: #f6f6f6;
         &--whitebackground {
             background-color: white;
             padding: 0;
             margin-left: 0;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
             font-size: 0.8rem;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
         }
 }
 

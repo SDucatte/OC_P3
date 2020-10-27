@@ -1,3 +1,22 @@
+/* Bloc comprenant le header, l'image du restaurant et le nom du restaurant avec l'icone favoris */ 
+
+.title {
+    font-family: "shrikhand";
+    position: relative;
+    &--menu {
+        text-align: center;
+        margin-bottom: 0.8rem;
+        font-size: 1.8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &--restaurant {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -9,14 +28,52 @@
     top: 10rem;
 }
 
-.icone--palette {
-    position: relative;
-}
-
 .photo {
     width: 18rem;
     height: 12rem;
     position: absolute;
+}
+
+/* Bloc comprenant toutes les propriétés sur les plats et les animations lors de leur selection */ 
+
+.plate__name {
+    max-width: 12.5rem;
+    font-size: 0.8rem;
+    padding: 0.25rem;
+    &--description {
+        font-size: 0.7rem;
+        font-style: normal;
+    }
+}
+
+.plate__animation {
+    opacity: 0;
+    padding: 0;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin: 0;
+    text-align: center;
+    width: 0%;
+    background-color: #99E2D0;
+}
+
+.fa-check-circle {
+    color: white;
+    font-size: 1rem;
+}
+
+.plate__price {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1.4rem;
+    left: 14rem;
+}
+
+.menu__list {
+    padding-left: 0;
 }
 
 .plate {
@@ -76,70 +133,7 @@
     100% { width: 9.5rem; }
 }
 
-@keyframes hide {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.plate__animation {
-    opacity: 0;
-    padding: 0;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin: 0;
-    text-align: center;
-    width: 0%;
-    background-color: #99E2D0;
-}
-
-.fa-check-circle {
-    color: white;
-}
-
-.plate__name {
-    max-width: 15rem;
-    font-size: 0.8rem;
-    padding: 0.25rem;
-    &--description {
-        font-size: 0.7rem;
-        font-style: normal;
-    }
-}
-
-.plate__price {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 0.7rem;
-    padding: 0.5rem;
-    position: absolute;
-    top: 1.4rem;
-    left: 14rem;
-    overflow: visible;
-}
-
-.title {
-    font-family: "shrikhand";
-    position: relative;
-    &--menu {
-        text-align: center;
-        margin-bottom: 0.8rem;
-        font-size: 1.8rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    &--restaurant {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        margin: 0px;
-        top: 0.2rem;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.menu__list {
-    padding-left: 0;
-}
+/* Animation en arrivant sur le menu */
 
 @keyframes plate {
     0% {opacity: 0;}
@@ -152,28 +146,6 @@
 
 .dessert{ animation: plate 250ms linear forwards 3s; }
 
-.fav-menu {
-    position: relative;
-    padding-right: 0.5rem;
-    &:hover {
-        .fav-menu--off {
-            opacity: 0;
-        }
-        .fav-menu--on {
-            opacity: 1;
-            color: #9356DC;
-            transition: color 400ms;
-            transform-origin: bottom;
-        }
-    }
-}
 
-.fav-menu--off {
-    position: absolute;
-    opacity: 1;
-}
 
-.fav-menu--on {
-    opacity: 0;
-    color: white;
-}
+
