@@ -1,23 +1,5 @@
 @charset "UTF-8";
 /* base */
-.section {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 18rem;
-  max-width: 20rem;
-  background-color: #f6f6f6;
-}
-.section--whitebackground {
-  background-color: white;
-  padding: 0;
-  margin-left: 0;
-  font-size: 0.8rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-}
-
 @font-face {
   font-family: "roboto";
   src: url("Roboto-Regular.ttf");
@@ -32,6 +14,11 @@
   padding-left: 1.5rem;
   padding-top: 1.5rem;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section__subtitle {
+    font-size: 1.5rem;
+  }
+}
 
 .menu__subtitle--underline {
   border-bottom: #99E2D0 3px solid;
@@ -41,6 +28,11 @@
   font-size: 0.8rem;
   margin-bottom: 0;
   font-weight: normal;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .menu__subtitle {
+    font-size: 1rem;
+  }
 }
 
 .link {
@@ -56,20 +48,38 @@
 .footer {
   background: #353535;
   color: white;
-  width: 100%;
+  width: 18rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-weight: lighter;
 }
 .footer--menu {
   top: 10rem;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .footer--menu {
+    width: 27rem;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .footer {
+    width: 90%;
+  }
+}
 
 .footer--list {
+  padding-left: 20px;
   line-height: 1.5rem;
   padding-bottom: 2rem;
-  margin-top: 0rem;
+  margin-top: 0;
+  max-width: 14rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .footer--list {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1rem;
+  }
 }
 
 .title--footer {
@@ -91,8 +101,6 @@
   padding-top: 0.4rem;
   margin-bottom: 0.3rem;
   font-size: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 .title--header--footer {
   text-align: left;
@@ -100,12 +108,14 @@
   padding-top: 1.3rem;
   padding-bottom: 0.6rem;
 }
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .section .section--whitebackground {
-    width: 40rem;
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .title--header {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
   }
 }
+
 /* page */
 /* Bloc comprenant le header, l'image du restaurant et le nom du restaurant avec l'icone favoris */
 .title {
@@ -119,10 +129,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .title--menu {
+    font-size: 2rem;
+  }
+}
 .title--restaurant {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .title--restaurant {
+    font-size: 1.5rem;
+  }
 }
 
 .menu {
@@ -135,22 +155,49 @@
   position: relative;
   top: 10rem;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .menu {
+    width: 25rem;
+    padding: 1rem;
+    top: 14rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .photo {
   width: 18rem;
   height: 12rem;
   position: absolute;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .photo {
+    width: 25rem;
+    height: 19rem;
+  }
+}
 
 /* Bloc comprenant toutes les propriétés sur les plats et les animations lors de leur selection */
 .plate__name {
-  max-width: 12.5rem;
+  width: 12.5rem;
   font-size: 0.8rem;
   padding: 0.25rem;
 }
 .plate__name--description {
   font-size: 0.7rem;
   font-style: normal;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .plate__name--description {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .plate__name {
+    font-size: 1rem;
+    width: 20rem;
+  }
 }
 
 .plate__animation {
@@ -162,6 +209,12 @@
   text-align: center;
   width: 0%;
   background-color: #99E2D0;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .plate__animation {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
 }
 
 .fa-check-circle {
@@ -177,6 +230,12 @@
   position: absolute;
   top: 1.4rem;
   left: 14rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .plate__price {
+    font-size: 1rem;
+    left: 20rem;
+  }
 }
 
 .menu__list {
@@ -198,6 +257,14 @@
   height: 3rem;
   animation: plate 1000ms linear 1s forwards;
   opacity: 0;
+  max-width: 18rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .plate {
+    max-width: 25rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
 }
 .plate:hover .plate__animation {
   display: flex;
@@ -224,9 +291,6 @@
   transform: translate(-350%);
   transition: transform linear 400ms;
 }
-.plate:hover .plate__name {
-  animation: reduc linear forwards;
-}
 
 @keyframes check {
   0% {
@@ -234,14 +298,6 @@
   }
   100% {
     width: 20%;
-  }
-}
-@keyframes reduc {
-  0% {
-    width: 12.5rem;
-  }
-  100% {
-    width: 9.5rem;
   }
 }
 /* Animation en arrivant sur le menu */
@@ -266,13 +322,46 @@
 }
 
 body {
-  width: 18rem;
   font-family: "roboto";
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  padding: 0;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
+  width: 18rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  body {
+    width: 40rem;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+  max-width: 20rem;
+  background-color: #f6f6f6;
+}
+.section--whitebackground {
+  background-color: white;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+.blurred-background {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Premier bloc avec la barre et le bouton qui permettra de géolocaliser les restaurants */
@@ -280,6 +369,11 @@ body {
   text-align: center;
   background: #f6f6f6;
   padding-bottom: 15px;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section__intro {
+    font-size: 1.2rem;
+  }
 }
 
 .section__intro--search_bar {
@@ -292,12 +386,16 @@ body {
 .section__subtitle--intro {
   text-align: center;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section__subtitle--intro {
+    font-size: 1.5rem;
+  }
+}
 
 /* Second bloc qui explique comment fonctionne l'application */
 .tutorial {
   display: flex;
   flex-direction: column;
-  padding: 0;
   padding: 0.5rem;
   font-size: 0.8rem;
   background: #f6f6f6;
@@ -305,7 +403,13 @@ body {
   width: 14rem;
   box-shadow: 0 5px 5px #aaa;
   margin-bottom: 0.75rem;
-  z-index: 0;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .tutorial {
+    width: 90%;
+    max-width: 100%;
+    font-size: 1rem;
+  }
 }
 .tutorial:hover {
   background-color: #ffdff6;
@@ -320,6 +424,13 @@ body {
   padding-left: 3rem;
   z-index: 1;
   font-weight: bold;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .tutorial__step {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 3.5rem;
+  }
 }
 
 .tutorial__number {
@@ -336,6 +447,14 @@ body {
   font-size: 0.5rem;
   z-index: 1;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .tutorial__number {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    top: 1rem;
+    left: -1rem;
+  }
+}
 
 .tutorial__icone {
   position: absolute;
@@ -343,6 +462,11 @@ body {
   top: 1rem;
   color: #909497;
   z-index: 1;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .tutorial__icone {
+    top: 1.2rem;
+  }
 }
 
 ul {
@@ -365,13 +489,24 @@ li {
   margin-bottom: -0.5rem;
   width: 18rem;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section__restaurant {
+    width: 40rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .section__restaurant img {
   max-width: 15rem;
-  width: auto;
-  height: auto;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
   margin: 0;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section__restaurant img {
+    max-width: 30rem;
+  }
 }
 
 .section__restaurant--description {
@@ -382,13 +517,26 @@ li {
   line-height: 1.25rem;
   padding: 1rem;
   padding-left: 0.5rem;
-  top: -1rem;
+  top: -0.5rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .section__restaurant--description {
+    max-width: 35rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
-.section__restaurant--icone {
+.fav {
   position: relative;
   left: 12.5rem;
-  top: -4rem;
+  top: 1rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .fav {
+    top: 1.5rem;
+    left: 25rem;
+  }
 }
 
 .new {
@@ -403,6 +551,12 @@ li {
   padding-left: 0.75rem;
   font-size: 0.75rem;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .new {
+    right: 2rem;
+    top: 1rem;
+  }
+}
 
 /* compenent */
 .btn {
@@ -412,6 +566,7 @@ li {
   border-radius: 1.5rem;
   padding: 0.6rem;
   margin-top: 1.25rem;
+  margin-bottom: 3rem;
 }
 .btn--order {
   width: 50%;
@@ -423,6 +578,13 @@ li {
   filter: brightness(110%);
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .btn {
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 6rem;
+  }
+}
 
 .return {
   display: flex;
@@ -430,20 +592,24 @@ li {
 }
 
 /*
-
 @keyframes loading {
     0% {opacity: 1;}
     100% {opacity: 1;}
 }
 
 .loading {
+    width: 5rem;
+    margin-left: auto;
+    margin-left: auto;
     opacity: 0;
     animation: loading 3s;
     position: relative;
     z-index: 1;
-    left: 7rem;
-    top: 15rem;
+    right: 10rem;
+    top: 5rem;
 }
+
+
 
 .loader--bars:before{
     content: "";

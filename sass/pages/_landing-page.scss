@@ -1,9 +1,40 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18rem;
+    max-width: 20rem;
+    background-color: #f6f6f6;
+        &--whitebackground {
+            background-color: white;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+        } 
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        width: 90%;
+        max-width: 100%;
+        }
+}
+
+.blurred-background {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
 /* Premier bloc avec la barre et le bouton qui permettra de géolocaliser les restaurants */
 
 .section__intro {
     text-align: center;
     background: #f6f6f6;
     padding-bottom: 15px;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        font-size: 1.2rem;
+    }
 }
 
 .section__intro--search_bar {
@@ -15,6 +46,9 @@
 
 .section__subtitle--intro {
     text-align: center;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        font-size: 1.5rem;
+    }
 }
 
 /* Second bloc qui explique comment fonctionne l'application */
@@ -22,7 +56,6 @@
 .tutorial {
     display: flex;
     flex-direction: column;
-    padding: 0;
     padding: 0.5rem;
     font-size: 0.8rem;
     background: #f6f6f6;
@@ -30,7 +63,11 @@
     width: 14rem;
     box-shadow: 0 5px 5px #aaa;
     margin-bottom: 0.75rem;
-    z-index: 0;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        width: 90%;
+        max-width: 100%;
+        font-size: 1rem;
+    }
     &:hover {
         background-color: lighten($color-secondary, 20%);
         .tutorial__icone{
@@ -39,13 +76,17 @@
     }
 }
 
-
 .tutorial__step {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 3rem;
     z-index: 1;
     font-weight: bold;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 3.5rem;
+    }
 }
 
 .tutorial__number {
@@ -61,6 +102,12 @@
     left: -0.5rem;
     font-size: 0.5rem;
     z-index: 1;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        top: 1rem;
+        left: -1rem;
+    }
 }
 
 .tutorial__icone {
@@ -69,6 +116,9 @@
     top: 1rem;
     color: #909497 ;
     z-index: 1;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        top: 1.2rem;
+    }
 }
 
 ul {
@@ -91,13 +141,21 @@ li {
     margin-right: auto;
     margin-bottom: -0.5rem;
     width: 18rem;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        width: 40rem;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
     img {
         max-width: 15rem;
-        width: auto;
-        height: auto;
         border-top-left-radius: 0.75rem;
         border-top-right-radius: 0.75rem;
         margin: 0;
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            max-width: 30rem;
+            
+        }
     }
 }
 
@@ -109,13 +167,25 @@ li {
     line-height: 1.25rem;
     padding: 1rem;
     padding-left: 0.5rem;
-    top: -1rem;
+    top: -0.5rem;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        max-width: 35rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        
+    }
 }
 
-.section__restaurant--icone {
+
+
+.fav {
     position: relative;
     left: 12.5rem;
-    top: -4rem;
+    top: 1rem;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        top: 1.5rem;
+        left: 25rem;
+    }
 }
 
 .new {
@@ -129,4 +199,8 @@ li {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     font-size: 0.75rem;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        right: 2rem;
+        top: 1rem;
+    }
 }

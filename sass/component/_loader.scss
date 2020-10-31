@@ -1,18 +1,22 @@
 /*
-
 @keyframes loading {
     0% {opacity: 1;}
     100% {opacity: 1;}
 }
 
 .loading {
+    width: 5rem;
+    margin-left: auto;
+    margin-left: auto;
     opacity: 0;
     animation: loading 3s;
     position: relative;
     z-index: 1;
-    left: 7rem;
-    top: 15rem;
+    right: 10rem;
+    top: 5rem;
 }
+
+
 
 .loader--bars:before{
     content: "";

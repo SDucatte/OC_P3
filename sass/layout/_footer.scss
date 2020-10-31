@@ -1,21 +1,35 @@
 .footer {
     background: #353535;
     color: white;
-    width: 100%;
+    width: 18rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    font-weight: lighter;
         &--menu {
             top: 10rem;
+            @media screen and (min-width: 700px) and (max-width: 900px) {
+                width: 27rem;
+                
+            }
+        }
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            width: 90%;
+            
         }
     }
 
 
 .footer--list {
+    padding-left: 20px;
     line-height: 1.5rem;
     padding-bottom: 2rem;
-    margin-top: 0rem;
+    margin-top: 0;
+    max-width: 14rem;
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1rem;
+    }
 }
 
 .title--footer {

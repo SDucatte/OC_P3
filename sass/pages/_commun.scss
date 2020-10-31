@@ -1,12 +1,17 @@
 body {
-    width: 18rem;
     font-family: "roboto";
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    padding: 0;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-}
+   width: 18rem;
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            width: 40rem;
+        
+            }
+    }
+
+
 
 
 

@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <link href="css/style.css" rel="stylesheet" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/25127d1d5a.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/77c65d2f94.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Ohmyfood</title> 
 </head>
 
@@ -14,13 +14,12 @@
         <h1 class="title title--header">ohmyfood</h1>
     </header>
     
-    <div class="loading">
-        <section class="section--loader">
-            <span class="loader loader--bars"><span></span></span>
-        </section>
-    </div>
+    <section class="loading">
+        <span class="loader loader--bars"><span></span></span>
+    </section>
     
     <div class="blurred-background">
+    
         <section class="section">
             <article class="section__intro">
                 <p class="section__intro--search_bar"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
@@ -30,8 +29,7 @@
             </article>    
         </section>
         
-        
-        <section class="section--whitebackground">
+        <section class="section section--whitebackground">
             
             <h2 class="section__subtitle">How it works</h2>
             
@@ -68,12 +66,13 @@
                     <img src="images/palette_petit_format.jpg" alt="plat restaurant the full palette">
                     <div class="section__restaurant--description"> 
                         <strong>The Full Palette</strong><br>Paris
+                        <div class="section__restaurant--icone">
+                            <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
+                            <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
+                        </div>
                     </div>
                 </a>
-                <div class="section__restaurant--icone">
-                    <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
-                    <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
-                </div>
+                
             </article>
             
             <article class="section__restaurant">
@@ -82,12 +81,14 @@
                     <img src="images/plate_petit_format.jpg" alt="plat restaurant the enchanted plate">
                     <div class="section__restaurant--description">
                         <strong>The Enchanted Plate</strong><br>Paris
+                        <div class="section__restaurant--icone">
+                            <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
+                            <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
+                        </div>
                     </div>
+                    
                 </a>
-                <div class="section__restaurant--icone">
-                    <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
-                    <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
-                </div>
+            
             </article>
             
             <article class="section__restaurant">
@@ -95,12 +96,13 @@
                     <img src="images/bastille_petit_format.jpg" alt="plat restaurant bastille">
                     <div class="section__restaurant--description">
                         <strong>Bastille</strong><br>Paris
+                        <div class="section__restaurant--icone">
+                            <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
+                            <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
+                        </div>
                     </div>
                 </a>
-                <div class="section__restaurant--icone">
-                    <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
-                    <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
-                </div>
+                
             </article>
             
             <article class="section__restaurant">
@@ -108,16 +110,19 @@
                     <img src="images/gourmand_petit_format.jpg" alt="plat restaurant le gourmand">
                     <div class="section__restaurant--description">
                         <strong>Gourmand</strong><br>Paris
+                        <div class="section__restaurant--icone">
+                            <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
+                            <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
+                        </div>
                     </div>
                 </a>
-                <div class="section__restaurant--icone">
-                    <span class="fav fav--off"><i class="far fa-heart fa-lg"></i></span>
-                    <span class="fav fav--on"><i class="fas fa-heart fa-lg"></i></span>
-                </div>
+                
             </article>
             
         </section>
+
     </div>
+   
     <footer class="footer">
         <ul class="footer--list">
             <li class="title title--footer">ohmyfood</li>

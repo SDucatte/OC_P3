@@ -1,20 +1,5 @@
-.section {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 18rem;
-    max-width: 20rem;
-    background-color: #f6f6f6;
-        &--whitebackground {
-            background-color: white;
-            padding: 0;
-            margin-left: 0;
-            font-size: 0.8rem;
-            margin-bottom: 3rem;
-            margin-top: 3rem;
-        }
-}
-
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
+
+$screen-tablet: 768px;
+
