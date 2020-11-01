@@ -1,57 +1,60 @@
-/*
 @keyframes loading {
     0% {opacity: 1;}
     100% {opacity: 1;}
 }
 
 .loading {
-    width: 5rem;
-    margin-left: auto;
-    margin-left: auto;
+    display: flex;
+   justify-content: center;
     opacity: 0;
     animation: loading 3s;
     position: relative;
-    z-index: 1;
-    right: 10rem;
     top: 5rem;
+    z-index: 1;
 }
-
-
 
 .loader--bars:before{
     content: "";
     display: block;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 115px;
     width: 0.5rem;
     height: 3rem;
     background: linear-gradient($color-secondary, $color-primary);
     animation: grow 1.5s linear infinite;
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+        left: 300px;
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        left: 24rem;
+    }
 }
 
 .loader--bars::after{
     content: "";
     display: block;
     position: absolute;
-    left: 15px;
-    top: 0;
     width: 0.5rem;
     height: 3rem;
     background: linear-gradient($color-secondary, $color-primary);
-    animation: grow 1.5s linear -0.33s infinite;
+    animation: grow 1.5s linear -0.66s infinite;
 }
 
 .loader--bars span{
     content: "";
     display: block;
     position: absolute;
-    left: 30px;
-    top: 0;
+    left: 130px;
     width: 0.5rem;
     height: 3rem;
     background: linear-gradient($color-secondary, $color-primary);
-    animation: grow 1.5s linear -.66s infinite;
+    animation: grow 1.5s linear -.33s infinite;
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+        left: 340px;
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        left: 26rem;
+    }
 }
 
 @keyframes grow {
@@ -69,4 +72,3 @@
     100%{opacity: 0.3;}
 }
 
-*/

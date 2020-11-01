@@ -14,16 +14,21 @@
             font-size: 0.8rem;
             margin-bottom: 2rem;
         } 
-    @media screen and (min-width: 700px) and (max-width: 900px) {
-        width: 90%;
-        max-width: 100%;
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+        width: 40rem;
+        max-width: 45rem;
         }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        width: 50rem;
+        max-width: 55rem;
+        margin: 0;
+        }
+
 }
 
 .blurred-background {
     margin-right: auto;
     margin-left: auto;
-
 }
 
 /* Premier bloc avec la barre et le bouton qui permettra de géolocaliser les restaurants */
@@ -32,7 +37,7 @@
     text-align: center;
     background: #f6f6f6;
     padding-bottom: 15px;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         font-size: 1.2rem;
     }
 }
@@ -46,7 +51,7 @@
 
 .section__subtitle--intro {
     text-align: center;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         font-size: 1.5rem;
     }
 }
@@ -63,10 +68,16 @@
     width: 14rem;
     box-shadow: 0 5px 5px #aaa;
     margin-bottom: 0.75rem;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         width: 90%;
         max-width: 100%;
         font-size: 1rem;
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        width: 90%;
+        max-width: 100%;
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
     &:hover {
         background-color: lighten($color-secondary, 20%);
@@ -82,7 +93,7 @@
     padding-left: 3rem;
     z-index: 1;
     font-weight: bold;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-left: 3.5rem;
@@ -102,7 +113,7 @@
     left: -0.5rem;
     font-size: 0.5rem;
     z-index: 1;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         padding: 0.5rem;
         font-size: 0.7rem;
         top: 1rem;
@@ -116,7 +127,7 @@
     top: 1rem;
     color: #909497 ;
     z-index: 1;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         top: 1.2rem;
     }
 }
@@ -139,24 +150,38 @@ li {
     font-family: "roboto";
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -0.5rem;
     width: 18rem;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         width: 40rem;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
     }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
     img {
         max-width: 15rem;
+        
         border-top-left-radius: 0.75rem;
         border-top-right-radius: 0.75rem;
         margin: 0;
-        @media screen and (min-width: 700px) and (max-width: 900px) {
+        @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
             max-width: 30rem;
-            
+        }
+        @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+            max-width: 20rem;
+            max-height: 10rem;
         }
     }
+}
+
+.section--restaurant {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 2rem;
 }
 
 .section__restaurant--description {
@@ -168,11 +193,15 @@ li {
     padding: 1rem;
     padding-left: 0.5rem;
     top: -0.5rem;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         max-width: 35rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        max-width: 45rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 }
 
@@ -182,7 +211,7 @@ li {
     position: relative;
     left: 12.5rem;
     top: 1rem;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         top: 1.5rem;
         left: 25rem;
     }
@@ -199,7 +228,7 @@ li {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     font-size: 0.75rem;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         right: 2rem;
         top: 1rem;
     }

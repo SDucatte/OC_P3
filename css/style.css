@@ -55,15 +55,26 @@
 }
 .footer--menu {
   top: 10rem;
+  background: #353535;
+  color: white;
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .footer--menu {
-    width: 27rem;
+    width: 42rem;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .footer {
-    width: 90%;
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .footer {
+    width: 50rem;
   }
 }
 
@@ -79,6 +90,14 @@
     margin-right: auto;
     margin-left: auto;
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .footer--list {
+    text-align: left;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -128,10 +147,11 @@
   font-size: 1.8rem;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: underline white;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .title--menu {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 .title--restaurant {
@@ -143,6 +163,13 @@
   .title--restaurant {
     font-size: 1.5rem;
   }
+}
+
+.return--link {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .menu {
@@ -157,13 +184,25 @@
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .menu {
-    width: 25rem;
+    width: 40rem;
     padding: 1rem;
-    top: 14rem;
+    top: 20rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .menu {
+    top: 20rem;
+    height: 40rem;
+  }
+}
+
+.menu--laptop {
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
 }
 
 .photo {
@@ -173,8 +212,14 @@
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .photo {
-    width: 25rem;
-    height: 19rem;
+    width: 42rem;
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .photo {
+    width: 50rem;
+    height: 23rem;
   }
 }
 
@@ -234,7 +279,12 @@
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .plate__price {
     font-size: 1rem;
-    left: 20rem;
+    left: 12.5rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .plate__price {
+    left: 12rem;
   }
 }
 
@@ -261,7 +311,7 @@
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .plate {
-    max-width: 25rem;
+    max-width: 40rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
   }
@@ -334,6 +384,11 @@ body {
     width: 40rem;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  body {
+    width: 50rem;
+  }
+}
 
 .section {
   display: flex;
@@ -354,8 +409,15 @@ body {
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .section {
-    width: 90%;
-    max-width: 100%;
+    width: 40rem;
+    max-width: 45rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .section {
+    width: 50rem;
+    max-width: 55rem;
+    margin: 0;
   }
 }
 
@@ -409,6 +471,14 @@ body {
     width: 90%;
     max-width: 100%;
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .tutorial {
+    width: 90%;
+    max-width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .tutorial:hover {
@@ -486,13 +556,19 @@ li {
   font-family: "roboto";
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -0.5rem;
   width: 18rem;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .section__restaurant {
     width: 40rem;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .section__restaurant {
+    width: 25rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -508,6 +584,18 @@ li {
     max-width: 30rem;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .section__restaurant img {
+    max-width: 20rem;
+    max-height: 10rem;
+  }
+}
+
+.section--restaurant {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+}
 
 .section__restaurant--description {
   background-color: white;
@@ -522,6 +610,13 @@ li {
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .section__restaurant--description {
     max-width: 35rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .section__restaurant--description {
+    max-width: 45rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
@@ -591,78 +686,102 @@ li {
   align-items: center;
 }
 
-/*
 @keyframes loading {
-    0% {opacity: 1;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .loading {
-    width: 5rem;
-    margin-left: auto;
-    margin-left: auto;
-    opacity: 0;
-    animation: loading 3s;
-    position: relative;
-    z-index: 1;
-    right: 10rem;
-    top: 5rem;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: loading 3s;
+  position: relative;
+  top: 5rem;
+  z-index: 1;
 }
 
-
-
-.loader--bars:before{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0.5rem;
-    height: 3rem;
-    background: linear-gradient($color-secondary, $color-primary);
-    animation: grow 1.5s linear infinite;
+.loader--bars:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 115px;
+  width: 0.5rem;
+  height: 3rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: grow 1.5s linear infinite;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .loader--bars:before {
+    left: 300px;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .loader--bars:before {
+    left: 24rem;
+  }
 }
 
-.loader--bars::after{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 15px;
-    top: 0;
-    width: 0.5rem;
-    height: 3rem;
-    background: linear-gradient($color-secondary, $color-primary);
-    animation: grow 1.5s linear -0.33s infinite;
+.loader--bars::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.5rem;
+  height: 3rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: grow 1.5s linear -0.66s infinite;
 }
 
-.loader--bars span{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 30px;
-    top: 0;
-    width: 0.5rem;
-    height: 3rem;
-    background: linear-gradient($color-secondary, $color-primary);
-    animation: grow 1.5s linear -.66s infinite;
+.loader--bars span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 130px;
+  width: 0.5rem;
+  height: 3rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: grow 1.5s linear -0.33s infinite;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .loader--bars span {
+    left: 340px;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .loader--bars span {
+    left: 26rem;
+  }
 }
 
 @keyframes grow {
-    0%{transform: scaleY(0); opacity: 0;}
-    50%{transform: scaleY(1); opacity: 1;}
-    100%{transform: scaleY(0); opacity: 0;}
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
 }
-
 .blurred-background {
-    animation: blurred 3s;
+  animation: blurred 3s;
 }
 
 @keyframes blurred {
-    0%{opacity: 0.3;}
-    100%{opacity: 0.3;}
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
-
-*/
 /* Ajouter au favoris depuis la page d'acceuil */
 .fav {
   font-weight: lighter;

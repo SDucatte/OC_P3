@@ -7,16 +7,24 @@
     position: relative;
         &--menu {
             top: 10rem;
-            @media screen and (min-width: 700px) and (max-width: 900px) {
-                width: 27rem;
-                
-            }
-        }
-        @media screen and (min-width: 700px) and (max-width: 900px) {
-            width: 90%;
-            
+            background: #353535;
+            color: white;
+            width: 18rem;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+            width: 42rem;
         }
     }
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+        width: 40rem;
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        width: 50rem;
+      
+    }
+}
 
 
 .footer--list {
@@ -25,11 +33,18 @@
     padding-bottom: 2rem;
     margin-top: 0;
     max-width: 14rem;
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         margin-right: auto;
         margin-left: auto;
         font-size: 1rem;
     }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        text-align: left;
+      max-width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
 }
 
 .title--footer {

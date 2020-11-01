@@ -12,7 +12,7 @@
         padding-top: 1.3rem;
         padding-bottom: 0.6rem;
     }
-    @media screen and (min-width: 700px) and (max-width: 900px) {
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         margin-left: auto;
         margin-right: auto;
         font-size: 3rem;

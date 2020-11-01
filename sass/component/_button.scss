@@ -16,7 +16,7 @@
                 filter: brightness(110%);
                 box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
             }
-            @media screen and (min-width: 700px) and (max-width: 900px) {
+            @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
                 padding: 1rem;
                 font-size: 1rem;
                 margin-bottom: 6rem;
