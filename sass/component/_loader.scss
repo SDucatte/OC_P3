@@ -28,6 +28,9 @@
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         left: 24rem;
     }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        left: 46rem;
+    }
 }
 
 .loader--bars::after{
@@ -54,6 +57,9 @@
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         left: 26rem;
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        left: 44rem;
     }
 }
 

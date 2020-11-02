@@ -5,24 +5,31 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-        &--menu {
-            top: 10rem;
-            background: #353535;
-            color: white;
-            width: 18rem;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-        @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
-            width: 42rem;
-        }
-    }
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         width: 40rem;
     }
+    &--menu {
+        top: 10rem;
+        background: #353535;
+        color: white;
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+            width: 42rem;
+            top: 18rem;
+        }
+        @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+            width: 90rem;
+            top: 15rem;
+        }
+    }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         width: 50rem;
-      
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        width: 90rem;
     }
 }
 
@@ -40,9 +47,13 @@
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         text-align: left;
-      max-width: 20%;
-      margin-left: auto;
-      margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }

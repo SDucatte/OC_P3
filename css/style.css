@@ -53,6 +53,11 @@
   margin-right: auto;
   position: relative;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .footer {
+    width: 40rem;
+  }
+}
 .footer--menu {
   top: 10rem;
   background: #353535;
@@ -65,16 +70,23 @@
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .footer--menu {
     width: 42rem;
+    top: 18rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  .footer {
-    width: 40rem;
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .footer--menu {
+    width: 90rem;
+    top: 15rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .footer {
     width: 50rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .footer {
+    width: 90rem;
   }
 }
 
@@ -92,10 +104,16 @@
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .footer--list {
     text-align: left;
-    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .footer--list {
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
   }
@@ -154,6 +172,11 @@
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 2000px) {
+  .title--menu {
+    font-size: 2.8rem;
+  }
+}
 .title--restaurant {
   font-size: 1.2rem;
   display: flex;
@@ -162,6 +185,13 @@
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .title--restaurant {
     font-size: 1.5rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 2000px) {
+  .title--restaurant {
+    font-size: 2rem;
+    justify-content: center;
   }
 }
 
@@ -192,17 +222,25 @@
     margin-right: auto;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .menu {
     top: 20rem;
     height: 40rem;
   }
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .menu {
+    top: 15rem;
+    height: 30rem;
+  }
+}
 
-.menu--laptop {
-  height: max-content;
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 901px) and (max-width: 2000px) {
+  .menu--laptop {
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .photo {
@@ -216,10 +254,16 @@
     height: 25rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .photo {
     width: 50rem;
     height: 23rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .photo {
+    width: 90rem;
+    height: 40rem;
   }
 }
 
@@ -238,10 +282,22 @@
     font-size: 0.9rem;
   }
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .plate__name--description {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .plate__name {
     font-size: 1rem;
     width: 20rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .plate__name {
+    width: 25rem;
+    max-width: 30rem;
+    font-size: 1rem;
   }
 }
 
@@ -279,12 +335,17 @@
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .plate__price {
     font-size: 1rem;
-    left: 12.5rem;
+    left: 32.5rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .plate__price {
     left: 12rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .plate__price {
+    left: 22rem;
   }
 }
 
@@ -314,6 +375,13 @@
     max-width: 40rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .plate {
+    max-width: 30rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 }
 .plate:hover .plate__animation {
@@ -384,9 +452,14 @@ body {
     width: 40rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   body {
     width: 50rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  body {
+    width: 90rem;
   }
 }
 
@@ -407,17 +480,29 @@ body {
   font-size: 0.8rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .section--whitebackground {
+    align-items: center;
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .section {
     width: 40rem;
     max-width: 45rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .section {
     width: 50rem;
     max-width: 55rem;
     margin: 0;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .section {
+    width: 90rem;
+    max-width: 95rem;
   }
 }
 
@@ -473,12 +558,18 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .tutorial {
     width: 90%;
     max-width: 100%;
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .tutorial {
+    width: 35rem;
+    font-size: 1rem;
   }
 }
 .tutorial:hover {
@@ -566,7 +657,7 @@ li {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .section__restaurant {
     width: 25rem;
     margin-left: auto;
@@ -584,7 +675,7 @@ li {
     max-width: 30rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .section__restaurant img {
     max-width: 20rem;
     max-height: 10rem;
@@ -614,7 +705,7 @@ li {
     padding-bottom: 1.5rem;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .section__restaurant--description {
     max-width: 45rem;
     padding-top: 1.5rem;
@@ -680,6 +771,11 @@ li {
     margin-bottom: 6rem;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 2000px) {
+  .btn {
+    margin-bottom: 6rem;
+  }
+}
 
 .return {
   display: flex;
@@ -719,9 +815,14 @@ li {
     left: 300px;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .loader--bars:before {
     left: 24rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .loader--bars:before {
+    left: 46rem;
   }
 }
 
@@ -750,9 +851,14 @@ li {
     left: 340px;
   }
 }
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1500px) {
   .loader--bars span {
     left: 26rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .loader--bars span {
+    left: 44rem;
   }
 }
 
@@ -787,6 +893,12 @@ li {
   font-weight: lighter;
   position: absolute;
 }
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  .fav {
+    left: 16rem;
+    top: 2rem;
+  }
+}
 .fav--on {
   opacity: 0;
   color: white;
@@ -809,6 +921,21 @@ li {
 .fav-menu {
   position: relative;
   padding-right: 0.5rem;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .fav-menu {
+    left: 12rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  .fav-menu {
+    left: 16rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .fav-menu {
+    left: 35rem;
+  }
 }
 .fav-menu:hover .fav-menu--off {
   opacity: 0;

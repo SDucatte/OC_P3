@@ -6,24 +6,31 @@
     width: 18rem;
     max-width: 20rem;
     background-color: #f6f6f6;
-        &--whitebackground {
-            background-color: white;
-            padding: 0;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 0.8rem;
-            margin-bottom: 2rem;
-        } 
+    &--whitebackground {
+        background-color: white;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+            align-items: center;
+            font-size: 1rem;
+        }
+    } 
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         width: 40rem;
         max-width: 45rem;
-        }
+    }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         width: 50rem;
         max-width: 55rem;
         margin: 0;
-        }
-
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        width: 90rem;
+        max-width: 95rem;
+    }
 }
 
 .blurred-background {
@@ -79,6 +86,10 @@
         font-size: 1rem;
         margin-bottom: 1rem;
     }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        width: 35rem;
+        font-size: 1rem;
+    }
     &:hover {
         background-color: lighten($color-secondary, 20%);
         .tutorial__icone{
@@ -98,6 +109,7 @@
         padding-bottom: 0.8rem;
         padding-left: 3.5rem;
     }
+    
 }
 
 .tutorial__number {
@@ -164,7 +176,6 @@ li {
     }
     img {
         max-width: 15rem;
-        
         border-top-left-radius: 0.75rem;
         border-top-right-radius: 0.75rem;
         margin: 0;

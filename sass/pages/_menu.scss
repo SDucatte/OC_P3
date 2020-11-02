@@ -13,6 +13,9 @@
         @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
             font-size: 2.5rem;
         }
+        @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
+            font-size: 2.8rem;
+        }
     }
     &--restaurant {
         font-size: 1.2rem;
@@ -20,6 +23,11 @@
         justify-content: space-between;
         @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
             font-size: 1.5rem;
+            justify-content: center;
+        }
+        @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
+            font-size: 2rem;
+            justify-content: center;
         }
     }
 }
@@ -52,12 +60,18 @@
         top: 20rem;
         height: 40rem;
     }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        top: 15rem;
+        height: 30rem;
+    }
 }
 
 .menu--laptop {
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .photo {
@@ -71,6 +85,10 @@
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         width: 50rem;
         height: 23rem;
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        width: 90rem;
+        height: 40rem;
     }
 }
 
@@ -87,10 +105,19 @@
         @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
             font-size: 0.9rem;
         }
+        @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+            font-size: 1rem;
+
+        }
     }
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         font-size: 1rem;
         width: 20rem;
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        width: 25rem;
+        max-width: 30rem;
+        font-size: 1rem;
     }
 }
 
@@ -124,10 +151,13 @@
     left: 14rem;
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         font-size: 1rem;
-        left: 12.5rem;
+        left: 32.5rem;
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         left: 12rem;
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        left: 22rem;
     }
 }
 
@@ -156,6 +186,11 @@
         padding-top: 0.6rem;
         padding-bottom: 0.6rem;
     }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        max-width: 30rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
     &:hover {
         .plate__animation {
             display: flex;
@@ -182,7 +217,7 @@
             transform: translate(-350%);
             transition: transform linear 400ms;
         }
-
+        
     }   
 }
 

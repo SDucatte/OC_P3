@@ -3,6 +3,10 @@
 .fav {
     font-weight: lighter;
     position: absolute;
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        left: 16rem;
+        top: 2rem;
+    }
     &--on {
         opacity: 0;
         color: white;
@@ -13,6 +17,8 @@
 }
 
 .section__restaurant--icone {
+
+    
     &:hover {
         .fav--off {
             opacity: 0;
@@ -30,6 +36,16 @@
 .fav-menu {
     position: relative;
     padding-right: 0.5rem;
+  
+    @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
+        left: 12rem;
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        left: 16rem;
+    }
+    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
+        left: 35rem;
+    }
     &:hover {
         .fav-menu--off {
             opacity: 0;
