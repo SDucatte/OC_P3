@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-between;
         @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             justify-content: center;
         }
         @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {

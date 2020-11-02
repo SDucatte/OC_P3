@@ -15,7 +15,12 @@
     margin-bottom: 0;
     font-weight: normal;
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
 } 
 

@@ -31,7 +31,14 @@
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .menu__subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 2000px) {
+  .menu__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -184,7 +191,7 @@
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .title--restaurant {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     justify-content: center;
   }
 }
