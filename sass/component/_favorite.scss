@@ -36,15 +36,14 @@
 .fav-menu {
     position: relative;
     padding-right: 0.5rem;
-  
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         left: 12rem;
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
-        left: 16rem;
+        left: 12rem;
     }
     @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
-        left: 35rem;
+        left: 30rem;
     }
     &:hover {
         .fav-menu--off {
