@@ -23,16 +23,15 @@
         }
         @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
             width: 90rem;
-            top: 18rem;
+            top: 15rem;
         }
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
         width: 55rem;
-       
     }
     @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
         width: 90rem;
-        top: 15rem;
+       
     }
 }
 

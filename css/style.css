@@ -83,7 +83,7 @@
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .footer--menu {
     width: 90rem;
-    top: 18rem;
+    top: 15rem;
   }
 }
 @media screen and (min-width: 901px) and (max-width: 1500px) {
@@ -94,7 +94,6 @@
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .footer {
     width: 90rem;
-    top: 15rem;
   }
 }
 
