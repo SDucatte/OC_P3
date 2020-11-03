@@ -8,6 +8,7 @@
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         width: 40rem;
     }
+    
     &--menu {
         top: 10rem;
         background: #353535;
@@ -26,13 +27,20 @@
         }
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
-        width: 50rem;
+        width: 55rem;
+       
     }
     @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
         width: 90rem;
+        top: 15rem;
     }
 }
 
+.footer--xl {
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+        top: 15rem;
+    }
+}
 
 .footer--list {
     padding-left: 20px;
