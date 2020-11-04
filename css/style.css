@@ -90,6 +90,11 @@
     top: 18rem;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  .footer--menu {
+    width: 55rem;
+  }
+}
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
   .footer--menu {
     width: 90rem;
@@ -328,7 +333,7 @@
   text-align: center;
   width: 0%;
   background-color: #99E2D0;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .plate__animation {
@@ -360,7 +365,7 @@
 }
 @media screen and (min-width: 901px) and (max-width: 1500px) {
   .plate__price {
-    left: 15rem;
+    left: 15.5rem;
   }
 }
 @media screen and (min-width: 1500px) and (max-width: 2000px) {
