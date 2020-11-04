@@ -17,19 +17,19 @@
     content: "";
     display: block;
     position: absolute;
-    left: 115px;
+    left: 45%;
     width: 0.5rem;
     height: 3rem;
     background: linear-gradient($color-secondary, $color-primary);
     animation: grow 1.5s linear infinite;
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
-        left: 300px;
+        left: 45%;
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
-        left: 24rem;
+        left: 45%;
     }
     @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
-        left: 46rem;
+        left: 45%;
     }
 }
 
@@ -39,6 +39,7 @@
     position: absolute;
     width: 0.5rem;
     height: 3rem;
+    left: 55%;
     background: linear-gradient($color-secondary, $color-primary);
     animation: grow 1.5s linear -0.66s infinite;
 }
@@ -47,19 +48,19 @@
     content: "";
     display: block;
     position: absolute;
-    left: 130px;
+    left: 50%;
     width: 0.5rem;
     height: 3rem;
     background: linear-gradient($color-secondary, $color-primary);
     animation: grow 1.5s linear -.33s infinite;
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
-        left: 340px;
+        left: 50%;
     }
     @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
-        left: 26rem;
+        left: 50%;
     }
     @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
-        left: 44rem;
+        left: 50%;
     }
 }
 

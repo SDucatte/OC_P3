@@ -4,16 +4,7 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 18rem;
-        @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
-            width: 40rem;
-            }
-        @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
-            width: 55rem;
-            }
-        @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
-            width: 90rem;
-        }
+    width: 100%;
     }
 
 
