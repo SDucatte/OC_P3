@@ -144,7 +144,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
         width: 40%;
     }
     img {
@@ -167,11 +167,11 @@ li {
 .section--restaurant {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

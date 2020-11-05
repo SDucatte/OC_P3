@@ -51,13 +51,11 @@
     @media screen and (min-width: $screen-sm-tablet) and (max-width: $screen-lg-tablet) {
         padding: 1rem;
     }
-    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-lg-laptop) {
+    @media screen and (min-width: $screen-sm-laptop) and (max-width: $screen-xlg-laptop) {
         bottom: 25rem;
+        height: 40rem;
     }
-    @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
-        top: 18rem;
-        
-    }
+   
 }
 
 .menu--laptop {
@@ -144,9 +142,9 @@
         right: 10%;
     }
     @media screen and (min-width: $screen-lg-laptop) and (max-width: $screen-xlg-laptop) {
-        left: 20.2rem;
         font-size: 0.9rem;
         margin-left: 1rem;
+        right: 5%;
     }
 }
 
@@ -200,6 +198,7 @@
         .plate__price {
             transform: translate(-120%);
             transition: transform linear 400ms;
+            
         }      
     }   
 }

@@ -35,7 +35,7 @@
     margin-bottom: 1rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .menu__subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -69,14 +69,8 @@
   margin-right: auto;
   position: relative;
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .footer--menu {
-    bottom: 25rem;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
-  .footer--xl {
     bottom: 25rem;
   }
 }
@@ -95,14 +89,14 @@
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .footer--list {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .footer--list {
     text-align: left;
     margin-left: auto;
@@ -163,7 +157,7 @@
     font-size: 2.5rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .title--menu {
     font-size: 2.8rem;
   }
@@ -178,7 +172,7 @@
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .title--restaurant {
     font-size: 2rem;
     justify-content: center;
@@ -207,18 +201,14 @@
     padding: 1rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .menu {
     bottom: 25rem;
-  }
-}
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
-  .menu {
-    top: 18rem;
+    height: 40rem;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .menu--laptop {
     height: max-content;
     display: flex;
@@ -226,7 +216,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .section--menu {
     width: 30%;
   }
@@ -259,12 +249,12 @@
     font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .plate__name--description {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .plate__name {
     width: 22rem;
     font-size: 1rem;
@@ -311,11 +301,11 @@
     right: 10%;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .plate__price {
-    left: 20.2rem;
     font-size: 0.9rem;
     margin-left: 1rem;
+    right: 5%;
   }
 }
 
@@ -346,7 +336,7 @@
     padding-bottom: 0.6rem;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .plate {
     max-width: 30rem;
     padding-top: 0.3rem;
@@ -480,7 +470,7 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .tutorial {
     width: 90%;
     max-width: 100%;
@@ -488,7 +478,7 @@ body {
     margin-bottom: 1rem;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .tutorial {
     width: 90%;
     max-width: 100%;
@@ -571,7 +561,7 @@ li {
   margin-right: auto;
   width: 80%;
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .section__restaurant {
     width: 40%;
   }
@@ -586,13 +576,13 @@ li {
     width: 80%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .section__restaurant img {
     max-width: 80%;
     max-height: auto;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .section__restaurant img {
     width: 80%;
   }
@@ -602,7 +592,7 @@ li {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .section--restaurant {
     flex-direction: row;
     flex-wrap: wrap;
@@ -629,7 +619,7 @@ li {
     padding-bottom: 1.5rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .section__restaurant--description {
     width: 74%;
     padding-top: 1.5rem;
@@ -660,7 +650,7 @@ li {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .new {
     right: 25%;
     top: 5%;
@@ -699,7 +689,7 @@ li {
     margin-bottom: 6rem;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .btn {
     margin-bottom: 6rem;
   }
@@ -743,14 +733,14 @@ li {
     left: 45%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .loader--bars:before {
-    left: 45%;
+    left: 48%;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .loader--bars:before {
-    left: 45%;
+    left: 49%;
   }
 }
 
@@ -763,6 +753,16 @@ li {
   left: 55%;
   background: linear-gradient(#FF79DA, #9356DC);
   animation: grow 1.5s linear -0.66s infinite;
+}
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+  .loader--bars::after {
+    left: 52%;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  .loader--bars::after {
+    left: 51%;
+  }
 }
 
 .loader--bars span {
@@ -780,12 +780,12 @@ li {
     left: 50%;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
   .loader--bars span {
     left: 50%;
   }
 }
-@media screen and (min-width: 3000px) and (max-width: 3000px) {
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
   .loader--bars span {
     left: 50%;
   }
@@ -847,7 +847,7 @@ li {
   position: relative;
   padding-right: 0.5rem;
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .fav-menu {
     left: 25%;
   }
